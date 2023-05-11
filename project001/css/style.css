@@ -1,5 +1,5 @@
 @charset 'utf-8';
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 /* 전체설정 */
 
@@ -14,7 +14,8 @@ a {color: #000;
 img {border: none;
     vertical-align: bottom;}
 
-body {font-family: '맑은고딕', 'Apple SD Gothic Neo', 'sans-serif';}
+    body {font-family: 'Nanum Gothic', sans-serif;
+        font-size: 14px;}
 
 
 /* 미디어쿼리설정 */
@@ -24,19 +25,46 @@ body {font-family: '맑은고딕', 'Apple SD Gothic Neo', 'sans-serif';}
 
     /* 레이아웃설정 */
 
-    /* 박스1-3-1,박스1-3-2,박스1-3-3 가로정렬*/
-    .box1-3 {display: flex;
+    /* 박스3-1 설정 */
+    
+    .box3-1 p{position: absolute;
+            color: #fff;
+            top: 350px;}
+
+    /* 박스3-3-1,박스3-3-2,박스3-3-3 가로정렬*/
+    .box3-3 {display: flex;
         justify-content: space-around;}
-    .box1-3>div {width: 32%;}
+    .box3-3>div {width: 32%;}
 
-    /* 박스 3-3-1,박스3-3-2 가로정렬 */
-    .box3-3 {display: flex;}
-    .box3-3>div {width: 50%;}
+    /* 박스 5-3-1,박스5-3-2 가로정렬 */
+    .box5-3 {display: flex;}
+    .box5-3>div {width: 50%;}
 
-    /* 박스 2-2-1, 박스2-2-2 가로정렬 */
-    .box2-2 {display: flex;}
-    .box2-2>div {width: 50%;}
+    /* 박스 4-2-1, 박스4-2-2 가로정렬 */
+    .box4-2 {display: flex;}
+    .box4-2>div {width: 50%;}
 
     /* 박스 6-3-1, 박스6-3-2 가로정렬 */
-    .box6-3 {display: flex;}
-    .box6-3>div {width: 50%;}
+    .box7-3 {display: flex;}
+    .box7-3>div {width: 50%;}
+
+
+    /* 박스 5-2 가로정렬 */
+    .box5-2 {}
+    .box5-2 ul {}
+    .box5-2 li {}
+
+
+    /* 박스5-5 가로정렬 */
+    .box5-5 {}
+    .box5-5 ul {display: flex;
+                justify-content: center;}
+    .box5-5 li {}
+
+    
+    /* 박스 6-2 공지 세로정렬 */
+    .box6-2 {}
+    .box6-2 ul {}
+    .box6-2 li {}
+    .box6-2 li a {margin: 30px;}
+    .box6-2> {text-align: right;}
