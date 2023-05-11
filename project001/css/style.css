@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+
+/* 전체설정 */
+
+* {margin: 0;
+    padding: 0;}
+
+ul, ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+body {font-family: '맑은고딕', 'Apple SD Gothic Neo', 'sans-serif';}
+
+
+/* 미디어쿼리설정 */
+
+/* 768px이상 설정 */
+@media (min-width:768px) {
+
+    /* 레이아웃설정 */
+
+    /* 박스1-3-1,박스1-3-2,박스1-3-3 가로정렬*/
+    .box1-3 {display: flex;
+        justify-content: space-around;}
+    .box1-3>div {width: 32%;}
+
+    /* 박스 3-3-1,박스3-3-2 가로정렬 */
+    .box3-3 {display: flex;}
+    .box3-3>div {width: 50%;}
+
+    /* 박스 2-2-1, 박스2-2-2 가로정렬 */
+    .box2-2 {display: flex;}
+    .box2-2>div {width: 50%;}
+
+    /* 박스 6-3-1, 박스6-3-2 가로정렬 */
+    .box6-3 {display: flex;}
+    .box6-3>div {width: 50%;}
