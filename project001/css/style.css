@@ -18,6 +18,86 @@ img {border: none;
         font-size: 14px;}
 
 
+
+/* 로고설정 */
+
+.logo {width: 624px;
+    height: 180px;
+    background-image: url(../img/logo_ver.png);
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;}
+
+
+/* gnb 설정 */
+.gnb {}
+.gnb ul {display: flex;}
+.gnb ul li {}
+.gnb ul li a {padding: 30px 40px;
+            display: block;
+            font-size: 18px;}
+
+
+/* hero 설정 */
+
+.hero {width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;}
+.hero img {width: 100%;
+            transform: translateY(-100px);}
+
+.hero_txt {width: 100%;
+        height: 80vh;
+        overflow: ;
+        margin: 0 auto;
+        position: relative;}
+
+
+.hero_txt {width: 100%;
+            position: absolute;
+            display: block;
+            text-align: left;
+            }
+
+.hero_txt span {display: block;
+            font-size: 28px;
+            color: aliceblue;}
+
+.hero_txt em {font-size: 35px;
+            font-style: normal;
+            margin-right: 5px;
+            color: #AA96DA;}
+
+.hero_txt i {font-size: 35px;
+                font-style: normal;
+                margin-right: 5px;
+                color: #89E95C;}
+
+.box3-2 {}
+
+.hero_op {}
+
+.op {}
+
+
+
+/* 박스4 설정 */
+
+.box4 {}
+
+.introimg {width: 50%;}
+
+
+
+footer {width: 100%;
+        background-color: #888;}
+
+
+
+
 /* 미디어쿼리설정 */
 
 /* 768px이상 설정 */
@@ -25,28 +105,15 @@ img {border: none;
 
     /* 레이아웃설정 */
 
-    /* 박스3-1 설정 */
-    
-    .box3-1 p{position: absolute;
-            color: #fff;
-            top: 350px;}
 
-    /* 박스3-3-1,박스3-3-2,박스3-3-3 가로정렬*/
-    .box3-3 {display: flex;
-        justify-content: space-around;}
-    .box3-3>div {width: 32%;}
+    
+
+
+    
 
     /* 박스 5-3-1,박스5-3-2 가로정렬 */
     .box5-3 {display: flex;}
     .box5-3>div {width: 50%;}
-
-    /* 박스 4-2-1, 박스4-2-2 가로정렬 */
-    .box4-2 {display: flex;}
-    .box4-2>div {width: 50%;}
-
-    /* 박스 6-3-1, 박스6-3-2 가로정렬 */
-    .box7-3 {display: flex;}
-    .box7-3>div {width: 50%;}
 
 
     /* 박스 5-2 가로정렬 */
@@ -68,3 +135,18 @@ img {border: none;
     .box6-2 li {}
     .box6-2 li a {margin: 30px;}
     .box6-2> {text-align: right;}
+
+
+    /* 박스 7-3-1, 박스7-3-2 가로정렬 */
+    .box7-3 {display: flex;}
+    .box7-3>div {width: 50%;}
+
+
+
+    /* 1140px 이상일때 */
+    @media (min-width:1140px) {
+
+    header {width: 1100px ;
+            margin: 0 auto;}
+
+    }
