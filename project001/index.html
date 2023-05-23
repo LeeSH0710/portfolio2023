@@ -10,20 +10,87 @@
     <!-- <link rel="stylesheet" href="css/grid-guide.css"> -->
     <!-- 외부스타일시트연결 -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 폰트어썸CDN -->
+    <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
+    
+    <!-- 제이쿼리 -->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+            // listTitle의 li를 클릭했을때 각 순번에 맞는 listBox의 ul이 보여라
+            
+            $('.thema li').click(function(){
+
+
+                // 변수만들기(순번찾기)
+                let a = $(this).index()
+                console.log(a)
+
+            
+            $('.thema .imgBox>div').hide()
+            $('.thema .imgBox>div').eq(a).show()
+            })
+            })
+        </script>
+
+
+<script>
+    $(document).ready(function(){
+
+    // listTitle의 li를 클릭했을때 각 순번에 맞는 listBox의 ul이 보여라
+    
+    $('.thema li').click(function(){
+
+
+        // 변수만들기(순번찾기)
+        let a = $(this).index()
+        console.log(a)
+
+    
+    $('.thema .imgBox>div').hide()
+    $('.thema .imgBox>div').eq(a).show()
+    })
+    })
+</script>
+
+
+
+
+
 </head>
 <body>
     
     <header class="boxA">
         <div class="box1">
             <h1 class="logo">대전오월드</h1>
+            <img src="img/cloud1.png" alt="" class="cloud1">
+            <img src="img/cloud2.png" alt="" class="cloud2">
+            <img src="img/grass3.png" alt="" class="grass3">
+            <img src="img/grass2.png" alt="" class="grass2">
+            <img src="img/header-giraffe.png" alt="" class="giraffe">
+            <img src="img/header_parrot.png" alt="" class="parrot">
+            <img src="img/header_flamingo.png" alt="" class="flamingo">
+            <img src="img/header_penguin.png" alt="" class="penguin">
+            <img src="img/header-tiger.png" alt="" class="tiger">
+            <img src="img/header_bear.png" alt="" class="bear">
+            <img src="img/flower1.png" alt="" class="flower1">
+            <img src="img/flower2.png" alt="" class="flower2">
+            <img src="img/flower3.png" alt="" class="flower3">
+            <img src="img/flower4.png" alt="" class="flower4">
+            <img src="img/flower5.png" alt="" class="flower5">
+            <img src="img/flower6.png" alt="" class="flower6">
         </div>
         <div class="box2">
             <nav class="gnb">
                 <ul>
                     <li><a href="#">O!World?</a></li>
                     <li><a href="#">이용정보</a></li>
-                    <li><a href="#">축제 및 이벤트</a></li>
-                    <li><a href="#">즐길거리</a></li>
+                    <li><a href="#">축제&이벤트</a></li>
+                    <li><a href="#">즐길거리 <em></em></a></li>
                     <li><a href="#">공지사항</a></li>
                 </ul>
             </nav>
@@ -32,78 +99,114 @@
 
 
     <section class="boxB">
-        <article class="box3">
+        
+
+        <article class="box3">         
+            <img src="img/hero1.png" alt="" class="herogo">
             <div class="box3-1">
                 <div class="hero">
-                    <img src="img/hero1.png" alt="">
                     <div class="hero_txt">
-                        <span>도심에서 살아숨쉬는 <i>자연속에</i><br>
+                        <p>도심에서 살아숨쉬는 <i>자연속에</i><br>
                             밤이되면 나타나는<br> 
-                            <em>미지의 세상</em></span>
+                            <em>미지의 세상</em></p>
                     </div>
                 </div>
                 
             </div>
             <div class="box3-2">
                 <div class="hero_op">
-                    <div class="op">
-                        <span>오월드 운영시간</span>
+                    <div class="op01">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>오<br>월드</span>
                         <p> 09:00~18:00</p>
                     </div>
-                    <div class="op">
-                        <span>나이트유니버스 운영시간</span>
+                    <div class="op02">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        <span>나이트<br>유니버스</span>
                         <p>18:00~21:00</p>
                     </div>
-                    <div class="op">
-                        <span>사파리 운영시간</span>
+                    <div class="op03">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                        <span>동물<br>사파리</span>
                         <p>09:45~17:30</p>
                     </div>
                 </div>
             </div>
             <div class="box3-3">
-                <div class="box3-3-1">이용요금</div>
-                <div class="box3-3-2">주변관광명소</div>
-                <div class="box3-3-3">할인정보</div>
+                <div class="sale">
+                    <div class="sale1"><a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>이용요금</a></div>
+                    <div class="sale2"><a href="#"><i class="fa fa-camera" aria-hidden="true"></i>주변관광명소</a></div>
+                    <div class="sale3"><a href="#"><i class="fa fa-tag" aria-hidden="true"></i>할인정보</a></div>
+                </div>
             </div>
+            
         </article>
         
         <article class="box4">
+        
+            <img src="img/rope.png" alt="" class="rope1">  
+            <img src="img/rope.png" alt="" class="rope2">  
             <div class="box4-1">
                 <h1 class="title">O!World?</h1>
+                <img src="img/o_world.png" alt="">
             </div>
             <div class="box4-2">
                 <div class="intro">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni eaque earum illum dolore commodi ipsum dolor, maxime dolorum reprehenderit voluptate? Perspiciatis</p>
+                    <p>대전 오월드는<br>
+                        주랜드+플라워랜드+조이랜드+버드랜드등<br>
+                        복합적인 공간으로 구성된<br>
+                        중부권 이남 최대 규모의 테마공원이며<br><br><br>
+                        
+                        2022년부터는 나이트유니버스의 개장으로<br>
+                        밤에는 다양한 디지털장치를 사용한 신비롭고<br> 
+                        색다른 즐거움을 즐길 수 있게 되었습니다.</p>
                 </div>
                 <div class="introimg">
                     <img src="img/afternoon.png" alt="">
+                    <img src="img/night_enter.png" alt="">
                 </div>
             </div>
+            <div class="o_cloud">
+                <img src="img/cloud6.png" alt="" class="cloud6">
+            </div>
         </article>
+
         
-        <article class="box5">
+        <article class="box5 thema">
+            <img src="img/rope.png" alt="" class="rope3">
+            <img src="img/rope.png" alt="" class="rope4">    
             <div class="box5-1">
-                <h1>logo</h1>
+                <h1 class="title">테마안내</h1>
+                <img src="img/tema.png" alt="">
             </div>
             <div class="box5-2">
-                <ul>
+                <ul class="thema_title">
                     <li>주랜드</li>
                     <li>버드랜드</li>
-                    <li>나이트유니버스</li>
+                    <li>나이트<br>유니버스</li>
                     <li>조이랜드</li>
                     <li>플라워랜드</li>
                 </ul>
             </div>
             <div class="box5-3">
-                <div class="box5-3-1">
-                    <img src="img/zoo_main.png" alt="">
+                <div class="imgBox">
+                    <div><img src="img/zoo_main.jpg" alt=""></div>
+                    <div class="on"><img src="img/bird_main.png" alt="" class="bird1"></div>
+                    <div><img src="img/zoo_main.jpg" alt=""></div>
+                    <div><img src="img/bird_main.png" alt=""></div>
+                    <div><img src="img/zoo_main.jpg" alt=""></div>
+                    
                 </div>
-                <div class="box5-3-2">
-                    <p>쥬랜드는 2002년 5월 개장하여<br>
+                
+                
+                <div class="thema_txt">
+                    <p>쥬랜드는 2002년 5월 개장하여<br><br>
 
-                        멸종되어 가는 동물의 종 보존과 야생동물의 전시기능 제공등 살아있는 학습의 장으로 지속하여 발전할 것입니다.<br>
+                        멸종되어 가는 동물의 종 보존과 야생동물의 전시기능<br>
+                        제공등 살아있는 학습의 장으로 지속하여 발전할 것입니다.<br><br>
                         
-                        119종 879수의 동물이 살아가고 있는 쥬랜드는 세계적 희귀동물의 보고입니다.</p>
+                        119종 879수의 동물이 살아가고 있는 쥬랜드는<br>
+                        세계적 희귀동물의 보고입니다.</p>
                 </div>
             </div>
             <div class="box5-5">
@@ -124,60 +227,107 @@
                     </ul>
                 </div>
             </div>
+            <div class="o_cloud2">
+                <img src="img/cloud5.png" alt="" class="cloud7">
+            </div>
         </article>
 
         <article class="box6">
+
+            <img src="img/rope.png" alt="" class="rope5">
+            <img src="img/rope.png" alt="" class="rope6">  
+
+
             <div class="box6-1">
                 <h1 class="title">공지사항</h1>
+                <img src="img/info.png" alt="">
             </div>
             <div class="box6-2">
-                <ul>
+                
+                <ul class="notice">
+                    
                     <li>
+                        <button>더보기 ></button>
+                        <div class="date"><span>28<br>2023-04</span></div>
                         <a href="#">
                             <div class="txt">
-                                <span>2023-04-28</span>
-                                <h3>주랜드 해양사 관람 일시 중단 안내(4.10...</h3>
+                                <h3>주랜드 해양사 관람 일시 중단 안내(4.10...</h3><p>운영관리부</p>
                                 <em>안녕하세요, 대전오월드입니다. 그늘막 설치 등 시설개선공사로 인해 해양사 ...</em>
-                                <span>운영관리부</span>
+
                             </div>
                         </a>
+                        
                     </li>
                     <li>
+                        <div class="date"><span>27<br>2023-04</span></div>
                         <a href="#">
                             <div class="txt">
-                                <span>2023-04-27</span>
-                                <h3>놀이시설(바나나점프) 운휴안내...</h3>
+                                <h3>놀이시설(바나나점프) 운휴안내...</h3><p>운영관리부</p>
                                 <em>-대전오월드 놀이시설(바나나점프) 운휴안내- ○ 기  종...</em>
-                                <span>운영관리부</span>
+                                
                             </div>
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="o_cloud3">
+                <img src="img/cloud4.png" alt="" class="cloud8">
             </div>
         </article>
         
-        <article class="box6">
-            <div class="box6-1">sns</div>
-            <div class="box6-2">상세이미지</div>
-        </article>
         <article class="box7">
-            <div class="box7-1">오시는길</div>
+
+            <img src="img/rope.png" alt="" class="rope7">
+            <img src="img/rope.png" alt="" class="rope8">  
+
+            <div class="box7-1">
+                <h1 class="title">sns</h1>
+                <img src="img/sns.png" alt="">
+            </div>
             <div class="box7-2">
-                <ul>
-                    <li>tab1오시는길</li>
-                    <li>tab2주차안내</li>
+                <button>더보기 ></button>
+                <div class="box7-2-1">
+                    <a href="#"><img src="img/snsMain1.png" alt="" class="sns1"></a>
+                </div>
+                <div class="box7-2-2">
+                    <a href="#"><img src="img/sns1.png" alt="" class="sns2"></a>
+                    <a href="#"><img src="img/sns2.png" alt="" class="sns3"></a>
+                    <a href="#"><img src="img/sns3.png" alt="" class="sns4"></a>
+                    <a href="#"><img src="img/sns4.png" alt="" class="sns5"></a>
+                </div>
+                
+            </div>
+        </article>
+
+
+        <article class="box8">
+
+            <img src="img/rope.png" alt="" class="rope9">
+            <img src="img/rope.png" alt="" class="rope10"> 
+
+            <div class="box8-1">
+                <h1 class="title">오시는길</h1>
+                <img src="img/way.png" alt="">
+            </div>
+            <div class="box8-2">
+                <ul class="waytab">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>오시는길</li>
+                    <li><i class="fa fa-car" aria-hidden="true"></i>주차안내</li>
                 </ul>
             </div>
-            <div class="box7-3">
-                <div class="box7-3-1">구글맵</div>
-                <div class="box7-3-2">
-                    <ul>
+            <div class="box8-3">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.976640592229!2d127.39472371527555!3d36.28861668005709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654e61dd45625d%3A0xd9e0f93060ed6a4e!2z64yA7KCE7Jik7JuU65Oc!5e0!3m2!1sko!2skr!4v1684474550756!5m2!1sko!2skr" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <div class="box8-3-2">
+                    <ul class="waytxt">
                         <li>
-                            <strong>오시는길</strong>
+                            <strong><i class="fa fa-map-marker" aria-hidden="true"></i>오시는길</strong>
                             <p>대전광역시 중구 사정공원로 70 (사정동)</p>
                         </li>
                         <li>
-                            <strong>시내버스이용시</strong>
+                            <strong><i class="fa fa-bus" aria-hidden="true"></i>시내버스이용시</strong>
                             <p>115번, 301번, 311번, 314번, 315번, 318번</p>
                         </li>
                     </ul>
@@ -187,8 +337,9 @@
         
     </section>
     <footer>
-        <p>35073 대전광역시 중구 사정공원로 70 (사정동)     대전오월드(305-82-12294)     TEL 042-580-4820    FAX 042-580-4711</p>
-        <p>Copyright &copy; 2018 Daejeon O-WORLD. All right reserved.</p>
+        <!-- 오시는길의 아래끝이 footer랑 겹치고 스타일에 footer를 설정하려해도 적용되지않습니다.. -->
+            <p>35073 대전광역시 중구 사정공원로 70 (사정동) 대전오월드(305-82-12294) TEL 042-580-4820    FAX 042-580-4711</p>
+            <p>Copyright &copy; 2018 Daejeon O-WORLD. All right reserved.</p>
     </footer>
 
 
