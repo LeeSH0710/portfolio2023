@@ -167,7 +167,7 @@ img {border: none;
         width: 100%;
         height: 80%;}
 
-.box3 img {width: 100%;
+.box3 img {width: 100%; 
         height: 730px;}
 
 .box3-1 .hero {position: absolute;
@@ -437,15 +437,33 @@ img {border: none;
 
         
 .box5-5 {background-color: #4FD96D;
-        border-radius: 15px;
-        margin-top: 50px;}
+        border-radius: 15px;    
+        margin-top: 50px;
+        position: relative;}
 
-.trailer {text-align: center;}
+.trailer {text-align: center;
+        height: 128px;
+        position: relative;}
 
-.trailer ul {display: flex;}
+.trailer ul {display: flex;
+        position: absolute;
+        width: 1127px;
+        left: 0;
+        top: 0;}
+
+        .trailer ul:nth-child(1) {left: 0;
+                margin-left: 8px;
+                animation: ani1 30s linear infinite;}
+
+        .trailer ul:nth-child(2) {left: 90%;
+                animation: ani2 30s linear infinite;}
 
 .trailer li {width: 18%;
                 align-items: center;}
+
+.trailer li img {margin-left: 10px;}
+
+
 
 .trailer li:hover {cursor: pointer;}
 

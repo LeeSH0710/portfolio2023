@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+img {vertical-align: bottom;}
+
+
+/* 배경이미지설정 */
+
+#wrap {width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../img/bg01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;}
+
+
+/* 로고설정 */
+
+#wrap h1 {position: fixed;
+        text-align: center;
+        left: 772px;
+        padding: 20px;}
+
+
+#wrap h1 img {width: 250px;
+            height: auto;}
+
+
+/* hero영역설정 */
+
+.txt {position: fixed;
+    top: 380px;
+    left: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;}
+
