@@ -13,37 +13,120 @@ a {text-decoration: none;
 img {vertical-align: bottom;}
 
 
-/* 배경이미지설정 */
+/* 레이아웃설정 */
 
-#wrap {width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-image: url(../img/bg01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;}
+header {}
+
+/* header설정 */
+
+header {width: 100%;
+        height: 100%; 
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;}
+
+header em {position: absolute;
+            width: 64px;
+            height: 64px;
+            background-color: aqua;}
+
+header nav {}
+
+header h1 {width: 100%;
+            display: inline-block;
+            background-image: url(../img/logo.png);
+            text-indent: -9999px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: skyblue;}
 
 
-/* 로고설정 */
+/* 섹션설정 */
+#wrap {}
 
-#wrap h1 {position: fixed;
-        text-align: center;
-        left: 772px;
-        padding: 20px;}
+section {width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;}
+
+/* 섹션구간 레이아웃설정 */
+
+section:nth-child(1) {background-color: #ddd;}
+section:nth-child(2) {background-color: #ccc;}
+section:nth-child(3) {background-color: #bbb;}
+section:nth-child(4) {background-color: #aaa;}
+section:nth-child(5) {background-color: #999;}
+section:nth-child(6) {background-color: #888;}
+section:nth-child(7) {background-color: #777;}
 
 
-#wrap h1 img {width: 250px;
-            height: auto;}
+/* hero설정 */
 
 
-/* hero영역설정 */
 
-.txt {position: fixed;
-    top: 380px;
-    left: 70px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;}
+/* 회사소개설정 */
+
+section:nth-child(2) {display: flex;
+                        justify-content: center;
+                        align-items: center;}
+
+section:nth-child(2) h2{background-color: aquamarine;}
+
+section:nth-child(2) article {background-color: firebrick;
+                                width: 100%;
+                                height: 50%;}
+
+section:nth-child(2) article ul {
+                                display: flex;
+                                height: 100%;}
+
+section:nth-child(2) article ul li {
+                                width: 50%;
+                                height: 100%;
+                                background-color: rebeccapurple;}
+
+
+/* 마리오소개설정 */
+
+section:nth-child(3) {}
+section:nth-child(3) article {display: flex;
+                                justify-content: center;
+                                align-items: center;}
+section:nth-child(3) article .mario {background-color: red;
+                                        display: flex;
+                                        margin: 50px 0;}
+section:nth-child(3) article .mario li {}
+
+section:nth-child(3) article .luige {background-color: green;
+        display: flex;
+        margin: 0 auto;}
+section:nth-child(3) article .luige li {}
+
+/* 히스토리설정 */
+
+section:nth-child(4) {display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(/img/mario_maker.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;}
+
+section:nth-child(4) article {width: 70%;
+                                height: 50%;
+                                margin-top: 300px;
+                                background-color: aqua;}
+
+section:nth-child(4) article>div {background-color: red;}
+
+
+/* 갤러리설정 */
+
+
+
+
+
+/* 시리즈설정 */
 
