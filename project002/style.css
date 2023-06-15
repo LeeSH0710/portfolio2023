@@ -1,0 +1,830 @@
+@charset 'utf-8';
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+/* 전체설정 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* 레이아웃설정 */
+
+header {
+}
+
+/* header설정 */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+}
+
+header em {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 50px;
+  background-color: yellow;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  width: 700px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 8%;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+header nav ul li {
+  margin-right: 10px;
+  padding: 20px;
+  background-color: yellow;
+  background-size: contain;
+}
+
+header h1 {
+  width: 250px;
+  height: 140px;
+  padding: 50px 0;
+  display: flex;
+  background-image: url(../img/logo.png);
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* 섹션설정 */
+#wrap {
+}
+
+#wrap section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 섹션구간 레이아웃설정 */
+
+section:nth-child(1) {
+  background-color: red;
+}
+section:nth-child(2) {
+  background-color: #ccc;
+}
+section:nth-child(3) {
+  background-color: #bbb;
+}
+section:nth-child(4) {
+  background-color: #aaa;
+}
+section:nth-child(5) {
+  background-color: #999;
+}
+section:nth-child(6) {
+  background-color: crimson;
+}
+section:nth-child(7) {
+  background-color: #777;
+}
+
+/* hero설정 */
+
+section:nth-child(1) {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+section:nth-child(1) article video {
+  width: 100%;
+  height: 100%;
+}
+
+section:nth-child(1) article div:nth-child(2) {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  bottom: 5%;
+  left: 25%;
+  background-image: url(/img/hero/mario_all.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  z-index: 999;
+}
+
+
+section:nth-child(1) article div:nth-child(3) {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  top: 20%;
+  left: 5%;
+  background-image: url(/img/hero/bowser.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  z-index: 999;
+}
+
+/* 회사소개설정 */
+
+section:nth-child(2) {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/nin/nin_back.jpg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+section:nth-child(2) > img {
+  position: absolute;
+  width: 388px;
+  height: 233px;
+  top: 20px;
+  left: -60px;
+  z-index: 3;
+  transform: rotate(-40deg);
+}
+
+section:nth-child(2) h2 {
+  position: relative;
+  font-size: 30px;
+  margin-top: 120px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-left: 200px;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 600px;
+}
+
+section:nth-child(2) h2 span {
+  font-size: 40px;
+  color: red;
+}
+
+section:nth-child(2) article {
+  background-color: firebrick;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  position: relative;
+}
+
+section:nth-child(2) article ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+
+section:nth-child(2) article ul li:nth-child(1) {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: -100px;
+  background-color: #fff;
+  transform: skewX(30deg) translateX(-85px);
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+section:nth-child(2) article ul li:nth-child(1) p {
+  transform: skewX(-30deg);
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin-left: 200px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 25px;
+}
+
+section:nth-child(2) article ul li:nth-child(2) {
+  position: absolute;
+  width: 70%;
+  display: flex;
+  right: 0;
+  height: 100%;
+  background-image: url(/img/nin/animal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  text-indent: -9999px;
+}
+
+/* 마리오소개설정 */
+
+section:nth-child(3) {
+  background-image: url(/img/info/item_back.jpg);
+  margin-bottom: 50px;
+}
+
+section:nth-child(3) h2 {
+  font-size: 30px;
+  font-family: "Black Han Sans", sans-serif;
+  padding: 40px;
+  background-color: white;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+section:nth-child(3) h2 img {width: 64px;
+  height: 64px;}
+
+section:nth-child(3) h2 span {color: red;
+                            font-size: 40px;
+                            letter-spacing: 2px;}
+
+section:nth-child(3) article {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+
+section:nth-child(3) article em {font-size: 50px;}
+
+section:nth-child(3) article ul {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  
+  justify-content: center;
+align-items: center;
+}
+
+section:nth-child(3) article .mario {
+    background-color: red;
+    margin: 40px 0;
+  }
+  
+  section:nth-child(3) article .luige {
+    background-color: green;
+  }
+
+  section:nth-child(3) article ul li {
+    width: 50%;
+    height: 30%;
+  }
+
+section:nth-child(3) article .mario li:nth-child(1) {
+  background-image: url(/img/info/mario1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  padding-right:100px;
+  width: 400px;
+height: 600px;
+}
+
+section:nth-child(3) article .mario li:nth-child(2) {
+    display: flex;
+    font-size: 30px;
+    font-family: "Black Han Sans", sans-serif;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+  }
+
+
+  section:nth-child(3) article .luige li:nth-child(1) {
+    display: flex;
+    font-size: 30px;
+    font-family: "Black Han Sans", sans-serif;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+  }
+
+
+section:nth-child(3) article .luige li:nth-child(2) {
+    background-image: url(/img/info/luigi1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 400px;
+height: 600px;
+  }
+
+
+
+/* 히스토리설정 */
+
+section:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+    position: relative;
+  background-image: url(/img/history/maker_back.jpg);}
+section:nth-child(4) .maker {width: 600px;
+                            height: 400px;
+                            top: 0;
+                            left: 30%;
+                            position: absolute;}
+
+section:nth-child(4) article {
+  width: 60%;
+  height: 55%;
+  margin-top: 300px;
+  background-color: skyblue;
+  background-image: url(/img/history/maker_back2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;}
+
+  
+
+  section:nth-child(4) article h2 {
+    width: 213px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: "Black Han Sans", sans-serif;
+    color: #fff;
+    text-shadow: 1px 3px 4px  black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/history/tr_block.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;}
+
+    section:nth-child(4) article .dot {width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 5%;
+    top: 15%;}
+
+    section:nth-child(4) article .world {width: 61px;
+      height: 11  8px;
+      position: absolute;
+      left: 5%;
+      top: 50%;}
+
+    section:nth-child(4) article .m3 {width: 50px;
+      height: 80px;
+    position: absolute;
+    top: 30%;
+    right: 7%;}
+
+    section:nth-child(4) article .n64 {width: 149px;
+      height: 245px;
+    position: absolute;
+    top: 60%;
+    right: 7%;}
+
+
+section:nth-child(4) article>div {
+    width: 50%;
+    height: 400px;
+    display: block;
+    top: 10%;
+    left: 25%;
+    text-align: center;
+  background-color: #F2E484;
+  position: absolute;
+}
+section:nth-child(4) article>div p {
+    font-size: 30px;
+    font-weight: normal;
+    padding-top: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    color: #fff;
+    text-shadow: 1px 3px 4px  black;
+  }
+
+  section:nth-child(4) article>div>div {
+    background-image: url(/img/history/block.png);
+    width: 109px;
+    height: 109px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: 82%;
+    margin-top: 40px;}
+
+
+/* 갤러리설정 */
+
+section:nth-child(5) {position: relative;
+                    display: flex;
+                    width: 100%;
+                    height: 100vh;
+                    background-image: url(/img/mario/classic_mario_back.png);
+                    background-size: contain;}
+
+section:nth-child(5) h2 {font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  text-shadow: 1px 3px 4px  black;
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  padding-top: 10px;
+  width: 200px;
+  height: 102px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-image: url(/img/mario/cloud_big.png);
+  background-size: contain;
+  background-repeat: no-repeat;}
+
+  section:nth-child(5) .flag {
+                              position: absolute;
+                              bottom: 13%;
+                              left: 10%;}
+
+  section:nth-child(5) .flag img {height: 70vh;}
+
+  section:nth-child(5) .castle {
+    position: absolute;
+    bottom: 13%;
+    right: 0;}
+
+section:nth-child(5) .castle img {height: 30vh;}
+
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+.images {
+  width: 100%;
+  height: auto;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-flow: row dense;
+    padding: 30px;
+    background-color: red;
+  } 
+  .imageFlex1 {
+    display: grid;
+    row-gap: 20px;
+  }
+  .imageFlex2 {
+    display: grid;
+    row-gap: 20px;
+  }
+  .imageFlex3 {
+    display: grid;
+    row-gap: 20px;
+  }
+
+
+
+
+/* 시리즈설정 */
+
+section:nth-child(6) {height: 560vh;
+                    width: 100%;}
+
+section:nth-child(6) h2 {margin : 40px 0;
+                        font-size: 50px;
+                        background-color: red;
+                        font-family: "Black Han Sans", sans-serif;
+                        text-shadow: 1px 3px 4px  black;
+                        color: #fff;
+                        padding-left: 100px;
+                        
+                        padding-bottom: px;}
+section:nth-child(6)>h2 img {width: 124px;
+height: 119px;
+
+margin-bottom: 0px;
+padding-top: 20px;}
+
+#wrap section:nth-child(6) article {width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+section:nth-child(6) article:nth-child(2) ul {width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+section:nth-child(6) article:nth-child(2) ul li {width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0000;}
+
+  section:nth-child(6) article:nth-child(2) ul li:nth-child(1) img {width: 1300px;
+  height: 648px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  }
+
+  section:nth-child(6) article:nth-child(2) ul li:nth-child(2) {}
+
+  section:nth-child(6) article:nth-child(2) ul li:nth-child(2) img {width: 432px;
+    height: 630px;
+    position: absolute;
+    top: 2%;
+    border: 1px solid #fff;}
+
+    section:nth-child(6) article:nth-child(2) ul li:nth-child(2) p {
+      margin-top: 130px;
+      text-align: left;
+      font-size: 30px;
+      z-index: 10;
+      line-height: 50px;
+      font-weight: bold;
+
+    } 
+
+    section:nth-child(6) article:nth-child(2) ul li:nth-child(2) em {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: normal;
+      color: #fff;
+      text-shadow: 1px 3px 4px  black;
+      font-family: "Black Han Sans", sans-serif;
+      
+    } 
+
+
+  section:nth-child(6) article:nth-child(2) ul li:nth-child(1) {}
+
+
+section:nth-child(6) article:nth-child(3) {height: 100%;
+  height: 200vh;}
+
+  section:nth-child(6) article:nth-child(3) ul {width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  section:nth-child(6) article:nth-child(3) ul li {width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000ff;}
+
+
+  section:nth-child(6) article:nth-child(3) ul li:nth-child(1) img {width: 432px;
+      height: 630px;
+      position: absolute;
+      top: 2%;
+      border: 1px solid #fff;}
+
+    section:nth-child(6) article:nth-child(3) ul li:nth-child(2) img {width: 1066px;
+    height: 708px;
+    position: absolute;
+    top: 5%;
+    right: 5%;}
+  
+    section:nth-child(6) article:nth-child(3) ul li:nth-child(2) {}
+  
+    
+  
+      section:nth-child(6) article:nth-child(3) ul li:nth-child(1) p {
+        margin-top: 130px;
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 50px;
+      } 
+
+      section:nth-child(6) article:nth-child(3) ul li:nth-child(1) em {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: normal;
+        color: #fff;
+        text-shadow: 1px 3px 4px  black;
+        font-family: "Black Han Sans", sans-serif;
+        
+      } 
+
+
+
+
+
+      section:nth-child(6) article:nth-child(4) ul {width: 100%;
+        height: 100vh;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+      }
+      section:nth-child(6) article:nth-child(4) ul li {width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffff00;}
+      
+        section:nth-child(6) article:nth-child(4) ul li:nth-child(1) img {width: 892px;
+        height: 739px;
+        padding-bottom: 100px;
+        position: absolute;
+        top: 10%;
+        left: 5%;}
+      
+        section:nth-child(6) article:nth-child(4) ul li:nth-child(2) {}
+      
+        section:nth-child(6) article:nth-child(4) ul li:nth-child(2) img {width: 432px;
+          height: 630px;
+          position: absolute;
+          top: 2%;
+          border: 1px solid #fff;}
+      
+          section:nth-child(6) article:nth-child(4) ul li:nth-child(2) p {
+            margin-top: 130px;
+            text-align: left;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 50px;
+          }
+
+          section:nth-child(6) article:nth-child(4) ul li:nth-child(2) em {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: normal;
+            color: #fff;
+            text-shadow: 1px 3px 4px  black;
+            font-family: "Black Han Sans", sans-serif;
+            
+          } 
+
+
+          section:nth-child(6) article:nth-child(5) ul {width: 100%;
+            height: 100vh;
+            display: flex;
+            background-color: #fff;
+            justify-content: center;
+            align-items: end;
+            position: relative;
+          }
+          section:nth-child(6) article:nth-child(5) ul li {width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: greenyellow;}
+          
+            section:nth-child(6) article:nth-child(5) ul li:nth-child(1) img {width: 432px;
+            height: 630px;
+            padding-bottom: 100px;
+            position: absolute;
+            top: 2%;
+            
+            left: 12%;}
+          section:nth-child(6) article:nth-child(5) ul li:nth-child(1) p {
+                margin-top: 130px;
+                text-align: left;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 50px;
+              } 
+
+            section:nth-child(6) article:nth-child(5) ul li:nth-child(2) {}
+          
+            section:nth-child(6) article:nth-child(5) ul li:nth-child(2) img {width: 933px;
+              height: 693px;
+              position: absolute;
+              top: 0;}
+
+              section:nth-child(6) article:nth-child(5) ul li:nth-child(1) em {
+                font-size: 40px;
+                font-style: normal;
+                font-weight: normal;
+                color: #fff;
+                text-shadow: 1px 3px 4px  black;
+                font-family: "Black Han Sans", sans-serif;
+                
+              } 
+          
+              
+
+              
+
+
+          section:nth-child(6) article:nth-child(6) ul {width: 100%;
+            height: 100vh;
+            display: flex;
+            background-color: #fff;
+            justify-content: center;
+            align-items: end;
+            position: relative;
+          }
+          section:nth-child(6) article:nth-child(6) ul li {width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;}
+          
+            section:nth-child(6) article:nth-child(6) ul li:nth-child(1) img {width: 743px;
+            height: 1012px;
+            padding-bottom: 100px;
+            position: absolute;
+            top: 0;
+            left: 10%;}
+          
+            section:nth-child(6) article:nth-child(6) ul li:nth-child(2) {}
+          
+            section:nth-child(6) article:nth-child(6) ul li:nth-child(2) img {width: 432px;
+              height: 630px;
+              position: absolute;
+              top: 2%;
+              border: 1px solid #fff;}
+          
+              section:nth-child(6) article:nth-child(6) ul li:nth-child(2) p {
+                margin-top: 130px;
+                text-align: left;
+                font-size: 30px;
+                line-height: 50px;
+              } 
+
+              section:nth-child(6) article:nth-child(6) ul li:nth-child(2) em {
+                font-size: 40px;
+                font-style: normal;
+                color: #fff;
+                text-shadow: 1px 3px 4px  black;
+                font-family: "Black Han Sans", sans-serif;
+                
+              } 
+
+/* footer */
+
+footer {width: 100%;
+        height: 300px;
+        background-color: red;}
