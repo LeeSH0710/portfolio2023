@@ -7,12 +7,21 @@
     <title>박스만들어보기</title>
     <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- 제이쿼리 CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <!-- 제이쿼리 외부스크립트연결 -->
+    <script src="js/javascript.js"></script>
 </head>
 <body>
     <header>
         <em></em>
         <nav>
-            <ul>
+            <ul class="gnb">
                 <li>it's me mario</li>
                 <li>마리오 히스토리</li>
                 <li>마리오 갤러리</li>
@@ -26,14 +35,14 @@
             <section>
                 <article>
                         <video loop="loop" autoplay preload="auto">
-                            <source src="img/odyssey.mp4" type="video/mp4">
+                            <source src="img/SuperMario30s.mp4" type="video/mp4">
                         </video>
                         <div></div>
                         <div></div>
                 </article>
             </section>
             <section>
-                <img src="/img/nin/nin_mark.png" alt="">
+                <img src="img/nin/nin_mark.png" alt="">
                     <h2>what's <span>nintendo</span></h2>
                     
                         <article>
@@ -43,8 +52,14 @@
                                     1985년 선보인 게임기 패미콤(Famicom)과 <br>'슈퍼 마리오 브라더스'가 세계적으로 히트하였고,<br> 
                                     게임기와 게임 소프트웨어를 개발하는 회사로 널리 알려지게 되었다.<br><br>
                                     
-                                    이후로 닌텐도는《마리오》,《동키콩》,《젤다의 전설》,《포켓몬스터》등 대형 비디오 게임 프랜차이즈들을 전개했으며,<br>
+                                    이후로 닌텐도는《마리오》,《동키콩》,《젤다의 전설》,《포켓몬스터》등<br>
+                                    대형 비디오 게임 프랜차이즈들을 전개했으며,<br>
                                      2022년 기준으로 전세계에 비디오 게임 540억 장, 게임기 판매량<br>8억 대 이상을 판매했다.</p></li>
+                                
+                            </ul>
+                            <ul class="slide">
+                                <li>사진</li>
+                                <li>사진</li>
                                 <li>사진</li>
                             </ul>
                         </article>
@@ -55,6 +70,7 @@
                     <article>
                         <ul class="mario">
                             <li>마리오사진</li>
+                            <li>마리오 복합</li>
                             <li><p><em>마리오</em><br>언제나 피치공주를 구하려 여행을 떠나는<br>
                                 버섯나라의 용감한 배관공!<br> 
                                 다른게임의 멋진 주인공과는 다르지만<br>
@@ -67,12 +83,13 @@
                                 신경쓰지만 마리오가 없을때는 용기를 내서<br>
                                 문제를 해결하기위해 분주한다!
                             </p></li>
+                            <li>루이지복합</li>
                             <li>루이지사진</li>
                         </ul>
                     </article>
             </section>
             <section>
-                <img src="/img/history/maker_mario.png" alt="" class="maker">
+                <img src="img/history/maker_mario.png" alt="" class="maker">
                 <article>
                     
                         <h2>마리오 히스토리</h2>
@@ -102,9 +119,9 @@
                     <div class="container">
                         <div class="images">
                           <div class="imageFlex1">
-                            <img src="img/gallary/gal01.jpg">
-                            <img src="img/gallary/gal03.jpg">
-                            <img src="img/gallary/gal05.jpg">
+                            <a href="#"><img src="img/gallary/gal01.jpg"></a>
+                            <a href=""><img src="img/gallary/gal03.jpg"></a>
+                            <a href=""><img src="img/gallary/gal05.jpg"></a>
                             
                           </div>
                         </div>
@@ -165,7 +182,7 @@
                         <ul>
                             <li>
                                 <img src="img/series/3dworld.jpg" alt="">
-                                <P> 
+                                <P> <em>슈퍼 마리오 3D월드 + 퓨리월드<br></em>
                                     가격 : 64,800원<br>
                                     발매일 : 2021년 2월 12일</P>
                             </li>
