@@ -1,0 +1,265 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  width: 100%;
+  height: 4000px;
+  background-color: #ddd;
+}
+
+h1 {
+  position: fixed;
+  font-size: 50px;
+  right: 20px;
+  top: 20px;
+}
+
+nav {
+  position: fixed;
+  left: 20px;
+  top: 20%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+nav ul li:hover {
+  color: #000;
+}
+
+aside {
+  position: fixed;
+  left: 40%;
+  top: 20%;
+}
+aside ul {
+  display: flex;
+}
+aside ul li {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+aside ul li:hover {
+  color: #000;
+}
+
+section {
+  position: fixed;
+}
+
+article {
+  width: 180px;
+  height: 60vh;
+  margin: 10px;
+  background-color: #fff;
+  float: left;
+  box-shadow: 5px 5px 5px #000;
+  opacity: 0.6;
+  transition: all 0.8s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+article strong {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 300px;
+  opacity: 0.4;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+article strong img {height:300px; width:auto;}
+
+article:hover {
+  opacity: 1;
+}
+
+article h2 {
+  background-color: wheat;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  transition: text-shadow 0.8s;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+}
+
+article h2:hover {
+  text-shadow: 10px 10px 0 red;
+  box-shadow: 10px 10px 0 red;
+}
+
+article:nth-child(1) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(2) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(3) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(4) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(5) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(6) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(7) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(8) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(9) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(10) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(11) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(12) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(13) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(14) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(15) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(16) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(17) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(18) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(19) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+article:nth-child(20) strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
