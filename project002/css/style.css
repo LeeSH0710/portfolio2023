@@ -21,6 +21,7 @@ a {
 img {
   vertical-align: bottom;
 }
+body {overflow-x: hidden;}
 
 /* 레이아웃설정 */
 
@@ -39,7 +40,7 @@ header {
   
 }
 
-header em {
+header em:nth-child(1) {
   position: absolute;
   width: 64px;
   height: 64px;
@@ -48,15 +49,29 @@ header em {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  z-index: 999;
+  z-index: 5;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all 0.8s
+}
+
+header em:nth-child(2) {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 50px;
+  background-image: url(../img/header/block_X.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 4;
+  cursor: pointer;
+  transition: all 0.8s
 }
 
 header em:hover {transform: scale(1.2);}
 
 header nav {
-  display: flex;
+  display: none;
   width: 700px;
   height: 70px;
   justify-content: center;
@@ -169,6 +184,7 @@ section:nth-child(7) {
   transition: all 0.5s;
 }
 
+#wrap section:nth-child(1) article div:nth-child(2).on {opacity: 1;}
 
 #wrap section:nth-child(1) article div:nth-child(3) {
   position: absolute;
@@ -182,8 +198,10 @@ section:nth-child(7) {
   display: flex;
   z-index: 999;
   opacity: 0;
-  transition: all 2s;
+  transition: all 0.8s;
 }
+
+#wrap section:nth-child(1) article div:nth-child(3).on {opacity: 1;}
 
 /* 회사소개설정 */
 
@@ -522,25 +540,35 @@ height: 600px;
     height: 64px;
     position: absolute;
     left: 5%;
-    top: 15%;}
+    top: 15%;
+    opacity: 0;
+    transition: all 0.5s;}
 
 #wrap section:nth-child(4) article .world {width: 61px;
       height: 11  8px;
       position: absolute;
       left: 5%;
-      top: 50%;}
+      top: 50%;
+      opacity: 0;
+      transition: all 1s;}
 
 #wrap section:nth-child(4) article .m3 {width: 50px;
       height: 80px;
     position: absolute;
     top: 30%;
-    right: 7%;}
+    right: 7%;
+    opacity: 0;
+    transition: all 0.8s;}
 
 #wrap section:nth-child(4) article .n64 {width: 149px;
       height: 245px;
     position: absolute;
     top: 60%;
-    right: 7%;}
+    right: 7%;
+    opacity: 0;
+    transition: all 1.5s;}
+
+    #wrap section:nth-child(4) article img.on {opacity: 1;}
 
 
 #wrap section:nth-child(4) article>div {
@@ -554,6 +582,7 @@ height: 600px;
   position: absolute;
 }
 #wrap section:nth-child(4) article>div p {
+    width: 100%;
     font-size: 30px;
     font-weight: normal;
     padding-top: 40px;
@@ -562,15 +591,21 @@ height: 600px;
     text-shadow: 1px 3px 4px  black;
   }
 
-#wrap section:nth-child(4) article>div>div {
-    background-image: url(../img/history/block.png);
+#wrap section:nth-child(4) article>div img {
     width: 109px;
     height: 109px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-left: 82%;
-    margin-top: 40px;}
+    margin-top: 40px;
+    transition: all 0.8s;}
+
+    #wrap section:nth-child(4) article>div img {
+      
+    }
+
+    #wrap section:nth-child(4) article>div img:hover {
+      transform: scale(1.2);}
 
 
 /* 갤러리설정 */
@@ -599,6 +634,13 @@ height: 600px;
   background-image: url(../img/mario/cloud_big.png);
   background-size: contain;
   background-repeat: no-repeat;}
+
+#wrap section:nth-child(5) .mario  {position: absolute;
+  top: 23%;
+  left: 8.5%;}
+
+  #wrap section:nth-child(5) .mario img {width: 62px;
+  height: 108px;}
 
 #wrap section:nth-child(5) .flag {
                               position: absolute;
@@ -669,11 +711,9 @@ section:nth-child(6) h2 {
                         text-shadow: 1px 3px 4px  black;
                         color: #fff;
                         padding-left: 100px;
-                        
-                        padding-bottom: px;}
+                        }
 section:nth-child(6)>h2 img {width: 93px;
 height: 90px;
-
 margin-bottom: 0px;
 padding-top: 20px;}
 
@@ -711,7 +751,12 @@ section:nth-child(6) article:nth-child(2) ul li {width: 50%;
     height: 630px;
     position: absolute;
     top: 2%;
-    border: 1px solid #fff;}
+    border: 1px solid #fff;
+    transition: all 0.8s;}
+
+    section:nth-child(6) article:nth-child(2) ul li:nth-child(2) img:hover {
+      transform: scale(1.1);
+    }
 
     section:nth-child(6) article:nth-child(2) ul li:nth-child(2) p {
       margin-top: 50px;
@@ -758,7 +803,12 @@ section:nth-child(6) article:nth-child(3) {height: 100%;
       height: 630px;
       position: absolute;
       top: 2%;
-      border: 1px solid #fff;}
+      border: 1px solid #fff;
+      transition: all 0.8s;}
+
+  section:nth-child(6) article:nth-child(3) ul li:nth-child(1) img:hover {
+    transform: scale(1.1);
+  }
 
     section:nth-child(6) article:nth-child(3) ul li:nth-child(2) img {width: 1066px;
     height: 708px;
@@ -820,7 +870,12 @@ section:nth-child(6) article:nth-child(3) {height: 100%;
           height: 630px;
           position: absolute;
           top: 2%;
-          border: 1px solid #fff;}
+          border: 1px solid #fff;
+          transition: all 0.8s;}
+
+          section:nth-child(6) article:nth-child(4) ul li:nth-child(2) img:hover {
+            transform: scale(1.1);
+          }
       
           section:nth-child(6) article:nth-child(4) ul li:nth-child(2) p {
             margin-top: 130px;
@@ -861,8 +916,13 @@ section:nth-child(6) article:nth-child(3) {height: 100%;
             padding-bottom: 100px;
             position: absolute;
             top: 2%;
-            
-            left: 12%;}
+            left: 12%;
+            transition: all 0.8s;}
+
+            section:nth-child(6) article:nth-child(5) ul li:nth-child(1) img:hover {
+              transform: scale(1.1);
+            }
+
           section:nth-child(6) article:nth-child(5) ul li:nth-child(1) p {
                 margin-top: 130px;
                 text-align: left;
@@ -921,7 +981,12 @@ section:nth-child(6) article:nth-child(3) {height: 100%;
               height: 630px;
               position: absolute;
               top: 2%;
-              border: 1px solid #fff;}
+              border: 1px solid #fff;
+              transition: all 0.8s;}
+
+              section:nth-child(6) article:nth-child(6) ul li:nth-child(2) img:hover {
+                transform: scale(1.1);
+              }
           
               section:nth-child(6) article:nth-child(6) ul li:nth-child(2) p {
                 margin-top: 130px;
@@ -942,5 +1007,56 @@ section:nth-child(6) article:nth-child(3) {height: 100%;
 /* footer */
 
 footer {width: 100%;
-        height: 100px;
+        height: 300px;
         background-color: red;}
+
+footer section {width: 100%;
+              height: 150px;}
+
+footer section:nth-child(1) {width: 100%;
+  background-color: #fff;
+  position: relative;}
+
+
+
+footer section:nth-child(1) img:nth-child(1) {position: absolute;
+                                left: -100px;
+                                bottom: 0;
+                                width: 64px;
+                                height: 64px;
+                                animation: ani 10s linear infinite;}
+
+footer section:nth-child(1) img:nth-child(2) {position: absolute;
+                                left: -100px;
+                                bottom: 0;
+                                width: 48px;
+                                height: 48px;
+                                animation: ani 14s linear infinite;}
+
+footer section:nth-child(1) img:nth-child(3) {position: absolute;
+                                left: -100px;
+                                bottom: 0;
+                                width: 64px;
+                                height: 64px;
+                                animation: ani 6s linear infinite;}
+
+footer section:nth-child(1) img:nth-child(4) {position: absolute;
+                                left: -100px;
+                                bottom: 0;
+                                width: 80px;
+                                height: 80px;
+                                animation: ani 8s linear infinite;}
+
+footer section:nth-child(1) img:nth-child(5) {position: absolute;
+                                left: -100px;
+                                bottom: 0;
+                                width: 100px;
+                                height: 120px;
+                                animation: ani 18s linear infinite;
+                                transform: scaleX(-1);}
+
+@keyframes ani {
+  0% {left: -100px;}
+  100% {left: 100%;}
+
+}

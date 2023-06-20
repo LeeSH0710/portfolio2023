@@ -18,143 +18,111 @@ a {
 
 body {
   width: 100%;
-  height: 6000px;
+  height: 4000px;
   min-width: 1400px;
   background-color: #ddd;
 }
 
-
-
-
-/*로고*/
 h1 {
   position: fixed;
+  font-size: 50px;
+  right: 20px;
   top: 20px;
-  left: 50px;
-  z-index: 5;
-  
-}
-h1 img {
-  width: 256px;
-  height: 144px;
 }
 
-/*sns*/
-#sns {
+nav {
   position: fixed;
-  top: 30px;
-  left: 60px;
+  left: 20px;
+  top: 20%;
 }
-#sns li {
-  float: left;
-  margin-right: 30px;
+nav ul {
+  display: flex;
 }
-#sns li i {
-  font-size: 25px;
-  color: #fff;
-  transition: all 0.5s;
-}
-#sns li:hover i {
-  transform: scale(1.5);
-  color: #888;
-}
-
-/*메뉴*/
-#navi {
-  position: fixed;
-  top: 50%;
-  left: 60px;
-  margin-top: -280px;
-}
-#navi li {
-  float: left;
+nav ul li {
+  margin-right: 25px;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
-  margin-right: 25px;
-  transition: all 0.5s;
   cursor: pointer;
-}
-#navi li:hover {
-  color: #888;
-}
-#navi li.on {
-  color: #888;
-}
-
-/*슬로건*/
-.txt {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  margin-top: -80px;
-  font-size: 100px;
   color: #fff;
-  text-align: right;
-  line-height: 0.5;
 }
-.txt span {
-  color: #aaa;
-}
-.txt em {
-  font-family: arial;
-  font-size: 18px;
-  font-style: normal;
-  color: #888;
-  letter-spacing: 1px;
+nav ul li:hover {
+  color: #000;
 }
 
-/*레이아웃*/
+aside {
+  position: fixed;
+  left: 40%;
+  top: 20%;
+}
+aside ul {
+  display: flex;
+}
+aside ul li {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+aside ul li:hover {
+  color: #000;
+}
+
 section {
   position: fixed;
-  top: 50%;
-  left: 0px;
-  margin-top: -250px;
-  width: 4600px;
-  height: 500px;
-}
-article {
-  position: relative;
-  top: 50%;
-  width: 180px;
-  height: 400px;
-  margin: 10px;
-  margin-top: -200px;
-  box-sizing: border-box;
-  float: left;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px #bbb;
-  overflow: hidden;
-  transition: all 0.7s;
-  left: 10%;
 }
 
-/*포폴 제목*/
-article h2 {
+article {
+  width: 180px;
+  height: 60vh;
+  margin: 10px;
+  background-color: #fff;
+  float: left;
+  box-shadow: 5px 5px 5px #000;
+  opacity: 0.6;
+  transition: all 0.8s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+article strong {
+  display: block;
   position: absolute;
-  top: 300px;
-  right: 0px;
+  left: 0px;
+  top: 0px;
   width: 100%;
-  height: 50px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  background: #111;
+  height: 300px;
   opacity: 0.4;
-  z-index: 2;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+article strong img {height:300px; width:auto;}
+
+article:hover {
+  opacity: 1;
+}
+
+article h2 {
+  background-color: wheat;
   cursor: pointer;
-  transition: all 0.5s;
+  text-align: center;
+  padding: 10px;
+  transition: text-shadow 0.8s;
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  height: 50px;
+  z-index: 10;
 }
-article:hover h2 {
-  opacity: 0.8;
-}
-article h2 a {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 3.5;
-  color: #fff;
-  letter-spacing: 2px;
-  transition: all 0.5s;
+
+article h2:hover {
+  text-shadow: 10px 10px 0 red;
+  box-shadow: 10px 10px 0 red;
 }
 
 /*포폴 썸네일*/
@@ -237,10 +205,9 @@ section span {
 
 /*클릭시 변형된 모습*/
 article.on {
-  width: 1000px;
-  height: 650px;
+  width: 780px;
+  height: 500px;
   margin-top: -250px;
-  
 }
 article.on h2 {
   top: 100px;
