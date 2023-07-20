@@ -165,10 +165,59 @@ img {border: none;
 
 .box3 {position: relative;
         width: 100%;
-        height: 80%;}
+        height: 80vh;
+        }
 
 .box3 img {width: 100%; 
-        height: 730px;}
+        height: 100%}
+
+.box3 .img1 {width: 100%;
+height: 100%;
+}
+
+.box3 .img1 ul {
+        width: auto;
+                height: 100%;}
+
+.box3 .img1 ul li {position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 0;
+        text-indent: -9999px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;}
+
+.box3 .img1 ul li.on {left: 0;}
+
+.box3 .img1 ul li:nth-child(1) {background-image: url(../img/hero1.jpg);
+                                }
+
+.box3 .img1 ul li:nth-child(2) {background-image: url(../img/hero2.png);
+        }
+
+.box3 .img1 ul li:nth-child(3) {background-image: url(../img/hero3.png);}
+
+.box3 .btn {text-indent: -9999px;
+        position: absolute;
+        bottom: 15%;
+        left: 43%;}
+
+
+.box3 .btn ul {display: flex;}
+
+.box3 .btn ul li {width: 50px;
+                height: 50px;
+                background-color: #000;
+                margin-right: 40px;
+                border-radius: 30px;
+                opacity: 0.6;
+                cursor: pointer;
+        }
+
+.box3 .btn ul li.on {background-color: #fff;}
+
 
 .box3-1 .hero {position: absolute;
         top: 70px;
@@ -346,124 +395,107 @@ img {border: none;
                 left: 100px;
                 height: 273px;}
 
-.thema {background-color: #C8FC9F;
-        height: 1000px;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 273px;
-        border-radius: 15px;
-        padding: 40px;
-        box-shadow: 2px 10px 4px 0px #00000040;
-        position: relative;}
-
-.thema h1 {text-indent: -9999px;}
-
-.thema img {display: flex;
-        margin: auto;}
-
-.thema ul {display: flex;
-        justify-content: center;}
-
-.box5-2 {}
-
-.thema_title {display: flex;}
-
-
-.thema_title li {display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 20%;
-        border-radius: 15px;
-        text-align: center;
-        color: #fff;
-        margin: 40px 20px 50px 0;
-        font-size: 30px;
-        font-family: 'Do Hyeon', sans-serif;
-        letter-spacing: 10px;
-        }
-
-
-.theme_title li {}
-
-.thema .thema_title li:nth-child(1) {background-color: #E0DC89;}
-.thema .thema_title li:nth-child(2) {background-color: #309BBF;}
-.thema .thema_title li:nth-child(3) {background-color: #794192;}
-.thema .thema_title li:nth-child(4) {background-color: #1A8E50;}
-.thema .thema_title li:nth-child(5) {background-color: #DF6670;}
-
-
-.box5-3 {padding: 20px;
-        margin-top: 50px;
-        height: 400px;
-        align-items: center;
-        justify-content: center;
-        width: 90%;}
+                .thema {background-color: #C8FC9F;
+                        height: 1000px;
+                        width: 80%;
+                        margin: 0 auto;
+                        margin-top: 273px;
+                        border-radius: 15px;
+                        padding: 40px;
+                        box-shadow: 2px 10px 4px 0px #00000040;
+                        position: relative;}
+                
+                .thema h1 {text-indent: -9999px;}
+                
+                .thema img {display: flex;
+                        margin: auto;}
+                
+                .thema ul {display: flex;
+                        justify-content: center;}
+                
+                .box5-2 {}
+                
+                .thema_title {display: flex;}
+                
+                
+                .thema_title li {display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 20%;
+                        border-radius: 15px;
+                        text-align: center;
+                        color: #fff;
+                        margin: 40px 20px 50px 0;
+                        font-size: 30px;
+                        font-family: 'Do Hyeon', sans-serif;
+                        letter-spacing: 10px;
+                        }
+                
+                
+                .theme_title li {}
+                
+                .thema .thema_title li:nth-child(1) {background-color: #E0DC89;}
+                .thema .thema_title li:nth-child(2) {background-color: #309BBF;}
+                .thema .thema_title li:nth-child(3) {background-color: #794192;}
+                .thema .thema_title li:nth-child(4) {background-color: #1A8E50;}
+                .thema .thema_title li:nth-child(5) {background-color: #DF6670;}
+                
+                
+                .box5-3 {padding: 20px;
+                        margin-top: 50px;
+                        height: 400px;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;}
+                
 
 
 /* 사진에 탭을 넣었는데 같은 사이즈로 지정했는데도 위치가 다릅니다; */
 
 .thema .imgBox {
-                height: 448px;
-                position: relative;
-                margin-right: 80px;
-                margin-left: 30px}
-                
+        height: 448px;
+        position: relative;
+        margin-right: 80px;
+        margin-left: 30px}
+        
 .thema .imgBox>div {display: flex;
-                align-items: center;
-                position: absolute;
-                width: 100%;
-                height: 448px;
-                display: none;}
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 448px;
+        display: none;}
 
 .thema .imgBox>div.on {display: flex;}
 
 .thema .imgBox img {margin-bottom: 40px;
-                position: absolute;
-                width: 598px;
-                height: 448px;}
+        position: absolute;
+        width: 598px;
+        height: 448px;}
 
 
 .thema_txt {background-color: #a57bb8;
-        padding: 90px 30px;
-        font-size: 18px;
-        line-height: 34px;
-        letter-spacing: 5px;
-        border-radius: 15px;
-        font-weight: bold;
-        margin-right: 20px;}
+padding: 90px 30px;
+font-size: 18px;
+line-height: 34px;
+letter-spacing: 5px;
+border-radius: 15px;
+font-weight: bold;
+margin-right: 20px;}
 
 .theme_txt p {}
 
 
-        
+
 .box5-5 {background-color: #4FD96D;
-        border-radius: 15px;    
-        margin-top: 50px;
-        position: relative;}
+border-radius: 15px;
+margin-top: 50px;}
 
-.trailer {text-align: center;
-        height: 128px;
-        position: relative;}
+.trailer {text-align: center;}
 
-.trailer ul {display: flex;
-        position: absolute;
-        width: 1127px;
-        left: 0;
-        top: 0;}
-
-        .trailer ul:nth-child(1) {left: 0;
-                margin-left: 8px;
-                animation: ani1 30s linear infinite;}
-
-        .trailer ul:nth-child(2) {left: 90%;
-                animation: ani2 30s linear infinite;}
+.trailer ul {display: flex;}
 
 .trailer li {width: 18%;
-                align-items: center;}
-
-.trailer li img {margin-left: 10px;}
-
-
+        align-items: center;}
 
 .trailer li:hover {cursor: pointer;}
 
@@ -487,15 +519,17 @@ img {border: none;
                 height: 273px;}
 
 
-.box6 {background-color: #9DD0FF;
+.box6 {width: 92%;
+        height: 100vh;
+        position: relative;}
+
+.box6-a {background-color: #9DD0FF;
         height: 600px;
-        width: 80%;
-        margin: 0 auto;
+        margin-left: 150px;
         margin-top: 273px;
         border-radius: 15px;
         padding: 40px;
-        box-shadow: 2px 10px 4px 0px #00000040;
-        position: relative;}
+        box-shadow: 2px 10px 4px 0px #00000040;}
 
 .box6-1 {text-indent: -9999px;}
         
@@ -564,7 +598,7 @@ img {border: none;
 
 .box6-2 button {border: none;
         padding: 10px 45px;
-        color: #;
+        color: #000;
         border-radius: 5px;
         background-color: #fff;
                 position: absolute;
@@ -691,9 +725,10 @@ img {border: none;
 
 .waytab li:hover {cursor: pointer;}
 
-.box8-3 {display: flex;}
+.box8-3 {display: flex;
+        margin-left: 100px;}
 
-.box8-3 .map {margin: 0 50px;
+.box8-3 .map {
         width: 600px;
                 height: 500px;}
 

@@ -1,0 +1,343 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+img {vertical-align: bottom;}
+
+body {overflow: hidden;
+    display: flex;}
+
+/* 헤더 설정 */
+
+header {}
+
+header h1 {position: fixed;
+    background-image: url(../img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 35%;
+    left: 12%;
+    top: 35%;
+    transition: all 0.8s;
+    transform: rotate(55deg);
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 999;}
+
+
+
+header nav {position: fixed;
+            z-index: 999;
+            right: 15%;
+            top: 5%;
+            transition: all 0.8s;
+            transform: rotate(-35deg);
+            width: 200px;
+            height: 400px;
+            z-index: 999;}
+            
+
+header nav ul {width: 100%;
+                height: 100%;}
+
+header nav li {width: 100%;
+    font-size: 40px;
+                display: flex;
+                color: #ff0000;
+                font-weight: bold;
+                text-shadow: 2px 2px #000;
+                padding-left: 20px;
+                margin-bottom: 60px;
+                border-left: 5px solid #ff0000;
+                transition: all 0.8s;
+                cursor: pointer;
+                transform: rotate(35deg);}
+
+
+
+header nav li:hover {color: #fff;
+                    border-left: 5px solid #fff;}
+
+section {position: absolute;
+    width: 100%;
+        height: 100%;
+        }
+
+
+/* hero설정 */
+
+.boxx {height: 185%;
+    width: 40%;
+    background-color: #000;
+    opacity: 0.2;
+    display: flex;
+    position: absolute;
+    left: 35%;
+    top: -40%;
+    transform: rotate(-35deg);
+    overflow: hidden;
+    transition: all 0.8s;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    z-index: 3;}
+
+
+
+.main {background-image: url(../img/디자인2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    transition: all 0.8s;
+    top: 0;
+    filter: grayscale(1);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;}
+
+.main.on {left: 0;
+        top: 0;}
+
+.main:hover {filter: grayscale(0);}
+
+.main .hero {height: 185%;
+            width: 40%;
+            background-color: #fff;
+            display: flex;
+            position: absolute;
+            left: 35%;
+            top: -40%;
+            transform: rotate(-35deg);
+            overflow: hidden;
+            filter: grayscale(1);
+            transition: all 0.8s;}
+
+.main .hero:hover {filter: grayscale(0);}
+
+.main .hero video {position: absolute;
+    top: -2%;
+    left: -500px;
+    width: 230%;
+        height: 100%;
+    transform: rotate(35deg);
+    }
+
+/* 영화소개 설정 */
+
+.info {width: 100%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    transition: all 0.8s;
+    z-index: 2;
+    overflow-y: scroll;}
+
+.info article:nth-child(1) {transition: all 0.8s;
+                            width: 100%;
+                            height: 100%;
+    background-image: url(../img/디자인6.jpg);
+                            background-size: cover;
+                            background-position: top center;
+                            background-repeat: no-repeat;
+                            filter: grayscale(1);
+                            z-index: 4;}
+
+.info article:nth-child(1):hover {filter: grayscale(0);}
+
+.info article:nth-child(1) .imf {width: 30%;
+                                height: 35%;
+                                opacity: 0.6;
+                                margin: 50px;}
+.info article:nth-child(1) .int {position: absolute;
+                            width: 50%;
+                            height: 50%;
+                            color: #fff;
+                            left: 10%;
+                            top: 10%;}
+
+.info .in1 {background-image: url(../img/info1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 400px;
+        height: 300px;}
+
+.info .in2 {background-image: url(../img/info2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 300px;
+        height: 500px;}
+
+
+.info.on {left: 0;
+        top: 0;}
+
+.info.on article:nth-child(3) {position: fixed;
+    display: block;}
+.info.off {left: -100%;
+            top: 0;}
+
+/* 시리즈표설정 */
+
+.series {background-image: url(../img/데드레코닝파트1.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 0;
+        z-index: 2;
+        transition: all 0.8s;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+.series article {height: 100%;
+                width: 30%;
+                display: block;}
+
+.series.on {left: 0;
+        top: 0;}
+
+.series.off {left: -100%;
+            top: 0;}
+
+.series div {width: 400px;
+            height: 100px;
+            font-size: 26px;
+            background-color: red;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+
+.series .list1 {}
+
+.series .list1 div {margin: 125px 0;}
+
+.series .list2 div {margin: 150px 0;}
+
+.m1 {}
+.m1 em {}
+
+.m2 {}
+.m2 em {}
+
+.m3 {}
+.m3 em {}
+
+.m4 {display: flex;
+    align-items: center;
+    }
+.m4 em {}
+
+.m5 {display: flex;
+    align-items: center;}
+.m5 em {}
+
+.m6 {}
+.m6 em {}
+
+.m7 {display: flex;
+    align-items: center;}
+.m7 em {}
+
+
+/* 등장인물설정 */
+
+.char {background-image: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        left: 100%;
+        top: 0;
+        z-index: 1;
+        transition: all 0.8s;
+        filter: grayscale(1);}
+
+.char:hover {filter: grayscale(0);}
+
+.char.on {left: 0;
+        top: 0;}
+
+.char.off {left: -100%;
+        top: 0;}
+
+.char article{float: right;}
+.char article h2 {color: #bbb;
+                font-size: 120px;
+                margin-right: 280px;
+                margin-top:100px;
+                margin-bottom: 100px;}
+
+.char article p {width: 500px;
+    font-size: 20px;
+                font-weight: bold;
+                line-height: 50px;
+                color: #aaa;}
+
+
+
+.char .img {background-image: url(../img/tom.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            position: absolute;
+            width: 740px;
+            height: 969px;
+            top: 0;
+            z-index: 5;
+            left: 15%;}
+
+.char .img2 {}
+
+/* 갤러리설정 */
+
+.gall {left: 100%;
+        top: 0;
+        background-image: url(../img/디자인3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: grayscale(1);}
+
+.gall.on {left: 0;
+        top: 0;}
+
+.gall article {
+                }
+
+
+.gall article .con1 {height: 25vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 200px;
+                    color: #fff;}
+
+.gall article .con1 ul {display: flex;
+                        justify-content: space-around;}
+
+.gall article .con1 ul li {}
+
+.gall article .con2 {}
+
+.gall article .con2 ul {display: flex;}
+
+.gall article .con2 ul li {}
+
+

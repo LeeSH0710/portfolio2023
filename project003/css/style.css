@@ -1,5 +1,12 @@
 @charset 'utf-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@font-face {
+        font-family: "Digital-7";
+        src: url("../font/digital-7.ttf");
+  }
+
 /* 전체설정 */
 * {margin: 0;
     padding: 0;}
@@ -11,7 +18,8 @@ a {text-decoration: none;
 
 img {vertical-align: bottom;}
 
-body {overflow: hidden;}
+body {overflow-x: hidden;
+    display: flex;}
 
 /* 헤더 설정 */
 
@@ -21,11 +29,11 @@ header h1 {position: fixed;
     background-image: url(../img/logo.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 35%;
-    height: 35%;
-    left: 15%;
-    top: 35%;
+    height: 10vh;
+    top: 45%;
+    left: 12%;
     transition: all 0.8s;
     transform: rotate(55deg);
     text-indent: -9999px;
@@ -36,13 +44,18 @@ header h1 {position: fixed;
 
 header nav {position: fixed;
             z-index: 999;
-            right: 10%;
+            right: 15%;
             top: 5%;
             transition: all 0.8s;
-            transform: rotate(-35deg);}
+            transform: rotate(-35deg);
+            width: 200px;
+            height: 400px;
+            z-index: 999;
+            font-family: 'Noto Sans KR', sans-serif;}
             
 
-header nav ul {width: 100%;}
+header nav ul {width: 100%;
+                height: 100%;}
 
 header nav li {width: 100%;
     font-size: 40px;
@@ -51,41 +64,44 @@ header nav li {width: 100%;
                 font-weight: bold;
                 text-shadow: 2px 2px #000;
                 padding-left: 20px;
-                margin-top: 60px;
+                margin-bottom: 60px;
                 border-left: 5px solid #ff0000;
                 transition: all 0.8s;
                 cursor: pointer;
                 transform: rotate(35deg);}
 
-header nav ul li span {display: flex;
-                    width: 0;
-                    height: 2px;
-                    background-color: red;
-                    margin-top: 15px;
-                    transition: all 1.2s;}
+
 
 header nav li:hover {color: #fff;
                     border-left: 5px solid #fff;}
 
+section {position: absolute;
+    width: 100%;
+        height: 100vh}
+/* .boxx {height: 185%;
+    width: 40%;
+    background-color: #000;
+    position: absolute;
+    left: 35%;
+    top: -40%;
+    transform: rotate(-35deg);
+    transition: all 0.8s;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    z-index: 4;
+        opacity: 0.2;
+        position: fixed;
+        }
+
+.boxx:hover {}
+
+.boxx.on {position: fixed;} */
+
+/* .boxx.none {z-index: -1;} */
+
 
 /* hero설정 */
 
-.box {position: absolute;
-    width: 100%;
-    height: 120vh;
-    overflow: hidden;}
-
-.box .boxx {height: 185%;
-    width: 40%;
-    background-color: #fff;
-    display: flex;
-    position: absolute;
-    left: 40%;
-    top: -35%;
-    transform: rotate(-35deg);
-    overflow: hidden;
-    transition: all 0.8s;
-    z-index: 3;}
 
 
 
@@ -95,11 +111,18 @@ header nav li:hover {color: #fff;
     background-position: center top;
     width: 100%;
     height: 100vh;
+    left: -100%;
     transition: all 0.8s;
-    overflow: hidden;
-    position: relative;
+    top: 0;
     filter: grayscale(1);
-    z-index: 2;}
+    position: relative;
+    overflow: hidden;}
+
+.main.on {left: 0;
+        top: 0;
+        position: fixed;}
+
+.main.on article {}
 
 .main:hover {filter: grayscale(0);}
 
@@ -108,14 +131,775 @@ header nav li:hover {color: #fff;
             background-color: #fff;
             display: flex;
             position: absolute;
-            left: 40%;
+            left: 35%;
             top: -40%;
             transform: rotate(-35deg);
-            overflow: hidden;}
+            overflow: hidden;
+            filter: grayscale(1);
+            transition: all 0.8s;}
 
-.main .hero .video {transform: rotate(35deg);
+.main .hero:hover {filter: grayscale(0);}
+
+.main .hero video {position: absolute;
+    top: -2%;
+    left: -500px;
+    width: 230%;
+    height: 100%;
+    transform: rotate(35deg);
+    overflow: hidden;
+    }
+
+/* 영화소개 설정 */
+
+.info {width: 100%;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    transition: all 0.8s;
+    display: block;}
+
+.info article {width: 100%;
+        height: 100vh;
+        overflow: hidden;}
+.info article:nth-child(1) {transition: all 0.8s;
+                            width: 100%;
+                            height: 100vh;
+    background-image: url(../img/디자인6.jpg);
+                            background-size: cover;
+                            background-position: top center;
+                            background-repeat: no-repeat;
+                            overflow: hidden;}
+
+.info article:nth-child(1):before{
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #777;}
+
+/* .info article:nth-child(1):hover {filter: grayscale(0);} */
+
+.info article:nth-child(1) .imf {width: 30%;
+                                height: 35%;
+                                opacity: 0.6;
+                                margin: 50px;}
+.info article:nth-child(1) .int {position: absolute;
+                            width: 55%;
+                            height: 200%;
+                            color: #fff;
+                            left: 24%;
+                            top: -50%;
+                            transform: rotate(-35deg);
+                            font-size: 25px;
+                            font-weight: bold;
+                            line-height: 60px;
+                        text-shadow: 2px 2px 2px #000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                            font-family: 'Noto Sans KR', sans-serif;
+                                background-color: rgba(0, 0, 0, 0.4);}
+
+.info article:nth-child(1) .int p {padding-bottom: 400px;
+                                padding-right: 380px;
+        transform: rotate(35deg);
+                                }
+
+.info .in1 {background-image: url(../img/info1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 800px;
+        height: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        }
+
+.info .in2 {background-image: url(../img/info2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 500px;
+        height: 500px;}
+
+
+.info.on {left: 0;
+        top: 0;}
+
+.info.off {left: -100%;
+            top: 0;}
+
+.info .act {overflow: hidden;
+            position: relative;}
+
+.info .act .lib {width: 60%;
+                height: 100vh;
+                float: right;}
+
+.info .act video {width: 100%;
+                height: 100vh;
+                outline: none;
+                overflow: hidden;
+                float: right;
+                object-fit: cover;}
+
+.info .act .vid {position: absolute;
+                right: 0;
+                color: #fff;
+                margin-right: 100px;
+                font-family: 'Noto Sans KR', sans-serif;}
+
+.info .act .vid h2 {margin-top: 150px;
+                    margin-right: 150px;
+                    font-size: 60px;
+                    line-height: 10px;
+                    margin-bottom: 100px;}
+
+.info .act .vid strong {
+                        color: #000;
+                        padding-left: 20px;}
+
+.info .act .vid strong {
+                        color: #000;
+                        padding-left: 20px;
+                        transition: all 0.8s;}
+
+
+
+.info .act .vid strong:hover {
+                        color: #ff0000;
+                        padding-left: 20px;}
+
+.info .act .vid p {font-weight: bold;
+                font-size: 30px;
+                    line-height: 50px;
+                font-weight: bold;
+                    font-family: 'Noto Sans KR', sans-serif;}
+
+
+.info .act .build {background-image: url(../img/디자인1누끼_copy.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 50%;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                filter: grayscale(1);
+                transition: all 0.8s;}
+
+.info .act .build:hover {filter: grayscale(0);}
+
+
+
+.info .act .vid {}
+
+.info .act2 {width: 100%;
+            height: 100vh;
+            background-color: beige;
+            display: flex;
+            position: relative;}
+
+.gull {width: 42%;
+        height: 100vh;
+        background-color: #bbb;
+        font-family: 'Noto Sans KR', sans-serif;}
+
+.gull h2 {font-size: 200px;
+        font-weight: bold;
+        color: #aaa;
+        margin-left: 45px;}
+
+.gull p {position: absolute;
+    font-size: 30px;
+    left: 12%;
+        z-index: 3;
+        font-weight: bold;
+        color: #aaa;
+        text-shadow: 2px 2px 2px #000;}
+
+.photo {width: 58%;
+        height: 100%;
+        background-color: aqua;
+        position: relative;
+        overflow: hidden;}
+
+.photo ul {}
+
+.photo ul li {position: absolute;
+    width: 100%;
+            height: 100vh;}
+
+.photo ul li:nth-child(1) {background-image: url(../img/con1.jpg);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            top: 0;}
+.photo ul li:nth-child(2) {background-image: url(../img/con2.jpg);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            top: 100%;}
+.photo ul li:nth-child(3) {background-image: url(../img/con3.jpg);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            top: -100%;}
+.back {width: 55%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../img/sub_back3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 0;
+        left: 14%;}
+
+.info .act3 {background-image: url(../img/gadget_blackback.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            font-family: 'Noto Sans KR', sans-serif;}
+
+.info .act3 .gad {width: 50%;
+                height: 50vh;
+                margin-top: 0px;
+                margin-right: 0px;
+                float: right;
+                z-index: 2;}
+
+.info .act3 .gad h2 {font-size: 200px;
+                    opacity: 0.6;
+                    color: #aaa;
+                    margin-bottom: 200px;}
+
+.info .act3 .gad p {font-size: 25px;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px #000;
+                    color: #bbb;
+                    float: right;
+                    margin-right: 220px;
+                    line-height: 50px;}
+
+.info .ex {width: 50%;
+        height: 100vh;
+        position: relative;
+        z-index: 0;}
+
+.info .ex ul {width: 100%;
+                height: 100%;}
+
+.info .ex ul li {position: absolute;}
+
+.info .ex ul li:nth-child(1) {width: 350px;
+                        height: 200px;
+                        top: 10%;
+                                left: 15%;
+                                background-image: url(../img/gadget.jpg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center center;}
+
+.info .ex ul li:nth-child(2) {width: 300px;
+                        height: 200px;
+                        top: 30%;
+                                right: -15%;
+                                background-image: url(../img/gadget2.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;}
+
+.info .ex ul li:nth-child(3) {width: 300px;
+                        height: 200px;
+                        top: 55%;
+                                left: 40%;
+                                background-image: url(../img/gadget3.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;}
+
+
+.info .ex ul li:nth-child(4) {width: 300px;
+                        height: 200px;
+                        top: 73%;
+                                right: -40%;
+                                background-image: url(../img/gadget4.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;}
+
+/* 시리즈표설정 */
+
+.series {
+        background-image: url(../img/데드레코닝파트1.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 0;
+        transition: all 0.8s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;}
+
+/* .series>img {width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;} */
+
+.series article {height: 100%;
+                width: 50%;
+                display: block;
                 }
 
+.series.on {left: 0;
+        top: 0;}
+
+.series.off {left: -100%;
+            top: 0;}
+
+.series .box2 {width: 60.7%;
+                height: 100vh;
+                margin-left: 5px;
+                display: flex;
+                position: absolute;
+                border-left: 5px solid #fff;
+                border-right: 5px solid #fff;
+                background-color: rgba(0, 0, 0, 0.4);}
+
+.series .box2 div {width: 400px;
+            height: 100px;
+            font-size: 26px;
+            background-color: red;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                ;}
 
 
 
+.series .list1 {margin-left: 8px;
+                margin-right: 338px;
+                }
+
+.series .list1 em {font-family: 'Digital-7';
+                font-size: 40px;}
+
+.series .list1 div {margin: 130px 0;
+                    cursor: pointer;}
+
+.series .list1 div:nth-child(1) {margin-top: 70px;}
+
+.series .list2 div {margin: 150px 0;
+                cursor: pointer;}
+
+.series .list2 em {font-family: 'Digital-7';
+                font-size: 35px;}
+
+.m1 {}
+.m1 em {}
+
+.m2 {}
+.m2 em {}
+
+.m3 {}
+.m3 em {}
+
+.m4 {display: flex;
+    align-items: center;
+    }
+.m4 em {}
+
+.m5 {display: flex;
+    align-items: center;}
+.m5 em {}
+
+.m6 {}
+.m6 em {}
+
+.m7 {display: flex;
+    align-items: center;}
+.m7 em {}
+
+
+.series .pop1 {
+        width: 471px;
+        height: 700px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #666;
+        right: 30%;
+        top: 10%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop1 p {font-size: 50px;}
+.series .pop1 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            top: 0;
+            left: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -5px 5px 5px #666;
+            cursor: pointer;}
+
+.series .pop2 {
+        width: 472px;
+        height: 700px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #666;
+        left: 30%;
+        top: 10%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop2 p {font-size: 50px;}
+.series .pop2 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            top: 0;
+            right: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 5px #666;
+            cursor: pointer;}
+
+
+.series .pop3 {
+        width: 468px;
+        height: 700px;
+        box-shadow: 5px 5px 5px #666;
+        right: 30%;
+        top: 15%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop3 p {font-size: 50px;}
+.series .pop3 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            top: 0;
+            left: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -5px 5px 5px #666;
+            cursor: pointer;}
+
+.series .pop4 {
+        width: 490px;
+        height: 700px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #666;
+        left: 30%;
+        top: 20%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p4.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop4 p {font-size: 50px;}
+.series .pop4 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            top: 0;
+            right: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 5px #666;
+            cursor: pointer;}
+
+.series .pop5 {
+        width: 449px;
+        height: 700px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #666;
+        right: 30%;
+        top: 10%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p5.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop5 p {font-size: 50px;}
+.series .pop5 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            bottom: 0;
+            left: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -5px 5px 5px #666;
+            cursor: pointer;}
+
+.series .pop6 {
+        width: 476px;
+        height: 700px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #666;
+        left: 30%;
+        top: 10%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p6.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop6 p {font-size: 50px;}
+.series .pop6 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            bottom: 0;
+            right: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 5px #666;
+            cursor: pointer;}
+
+.series .pop7 {
+        width: 475px;
+        height: 700px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #666;
+        right: 30%;
+        top: 20%;
+        z-index: 999;
+        position: absolute;
+        background-image: url(../img/p7.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: none;}
+
+.series .pop7 p {font-size: 50px;}
+.series .pop7 span {
+        position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            background-color: #fff;
+            bottom: 0;
+            left: -50px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -5px 5px 5px #666;
+            cursor: pointer;}
+/* 등장인물설정 */
+
+.char {background-image: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        left: 100%;
+        top: 0;
+        transition: all 0.8s;
+        filter: grayscale(1);
+        position: fixed;}
+
+/* .char>img {width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;} */
+
+.char:hover {filter: grayscale(0);}
+
+.char.on {left: 0;
+        top: 0;}
+
+.char.off {left: -100%;
+        top: 0;}
+
+.char article{float: right;}
+.char article h2 {color: #bbb;
+                font-size: 180px;
+                margin-right: 140px;
+                margin-top:80px;
+                margin-bottom: 100px;
+                opacity: 0.4;}
+
+.char article p {width: 500px;
+    font-size: 20px;
+                font-weight: bold;
+                line-height: 50px;
+                color: #aaa;
+                text-shadow: 2px 2px 2px #000;
+                padding-left: 300px;}
+
+
+
+.char .img {background-image: url(../img/tom.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -15%;}
+
+/* 갤러리설정 */
+
+.gall {left: 100%;
+        top: 0;
+        background-image: url(../img/디자인3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        backdrop-filter: gray;
+        overflow: hidden;
+        position: fixed;}
+
+.gall.on {left: 0;
+        top: 0;}
+
+.gall article {filter: grayscale(0);}
+
+.gall:hover {filter: grayscale(0);}
+
+.gall article>div {text-indent: -9999px;}
+
+.gall article .con1 {height: 35vh;
+                        width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 150px;
+                    color: #fff;
+                    }
+
+.gall article .con1 ul {display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        }
+
+.gall article .con1 ul li {width: 200px;
+                            height: 150px;
+                            transition: all 0.8s;}
+
+.gall article .con1 ul li:hover {transform: scale(1.5);}
+
+.gall article .con1 ul li:nth-child(1) {background-image: url(../img/g1.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                        object-fit: cover;
+                                        width: 400px;
+                                        height: 266px;
+                                        margin-left: 120px;}
+.gall article .con1 ul li:nth-child(2) {background-image: url(../img/g2.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                        width: 534px;
+                                        height: 300px;
+                                        margin-left: 80px;}
+
+.gall article .con1 ul li:nth-child(3) {background-image: url(../img/g3.jpg);
+        width: 428px;
+        height: 240px;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                        margin-left: 80px;}
+
+.gall article .con2 {height: 35vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        color: #fff;}
+
+.gall article .con2 ul {display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;}
+
+.gall article .con2 ul li {width: 200px;
+        height: 150px;
+        transition: all 0.8s;}
+
+.gall article .con2 ul li:hover {transform: scale(1.5);}
+
+
+
+.gall article .con2 ul li:nth-child(1) {background-image: url(../img/g4.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                        width: 500px;
+                                        height: 300px;
+                                        margin-left: 150px;}
+
+.gall article .con2 ul li:nth-child(2) {background-image: url(../img/g5.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                        width: 600px;
+                                        height: 339px;
+                                        margin-left: 80px;}
+
+.gall article .con2 ul li:nth-child(3) {background-image: url(../img/g6.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                        margin-left: 40px;
+                                        width: 457px;
+                                        height: 230px;}
