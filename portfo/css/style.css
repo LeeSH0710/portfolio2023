@@ -109,57 +109,95 @@ section {position: fixed;
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    color: #fff;
+    font-family: 'bitbit';
+    font-size: 30px;}
 
 
 .prof.on {top: 0;
         left: 0;}
 
+.prof article {width: 95%;
+            height: 95%;
+            display: flex;
+            border-radius: 20px;
+            border: 2px solid #fff;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+}
 
-.prof .skill {width: 1000px;
-                height: 40vh;
-                display: flex;
-            background-color: red;}
+.prof .first {width: 30%;
+            height: 95%;
+            background-color: red;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            padding: 5px;
+            margin-left: 20px;}
 
-.prof .box1 {width: 50%;
+.first ul {}
+
+.first ul li {
+    background-color: green;}
+
+.first ul li:nth-child(1) {width: 100%;
+height: 70px;
+background-color: #17CF29;
+display: flex;
+align-items: center;}
+
+.first ul li:nth-child(1) p {}
+
+                            
+
+.first ul li:nth-child(2) {width: 100%;
+                            height: 300px;
+                            background-color: blue;}
+                            
+
+.first ul li:nth-child(3) {width: 100%;
+                            height: 200px;}
+
+.first ul li:nth-child(4) {width: 100%;
+                            height: 190px;}
+
+.prof .box {width: 70%;
+            height: 95%;
+            border: 2px solid;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 7px;}
+
+.prof .second {width: 100%;
+            height: 50%;
+            background-color: gray;}
+
+.second ul {display: flex;}
+
+.second ul li {width: 50%;}
+
+.prof .third {width: 100%;
+            height: 50%;}
+
+.third ul {display: flex;
+            width: 100%;
             height: 100%;}
 
-.prof .box1 ul {width: 100%;
-                height: 100%;}
+.third li {}
 
-.prof .box1 li {width: 500px;
-                height: 50px;
-    margin-bottom: 20px;
-    background-color: blue;
-    }
+.third li:nth-child(1) {width: 10%;
+    height: 100%;
+background-color: magenta;}
 
+.third li:nth-child(2) {width: 50%;
+height: 100%;
+    background-color: #CF1512;}
 
-.prof .box2 {background-color: beige;
-            width: 500px;
-            height: 100%;}
+.third li:nth-child(3) {width: 40%;
+    height: 100%;
+    background-color: olive;}
 
-.prof .box2 ul {}
-
-.prof .box2 li {margin-bottom: 20px;
-    width: 500px;
-    height: 50px;}
-
-.prof .box2 li p {}
-
-.box3 {width: 1000px;
-    display: flex;}
-
-.pers {width: 500px;
-        height: 40vh;
-        background-color: orange;}
-
-.pers .face {}
-
-.pers .info {}
-
-.like {width: 500px;
-        height: 40vh;
-        background-color: aqua;}
 
 /* 디자인설정 */
 
@@ -398,25 +436,117 @@ section {position: fixed;
     height: 100vh;
     background-color: antiquewhite;
     position: absolute;
+    display: flex;
     top: 0;
     left: 100%;}
 
 .pub.on {top: 0;
         left: 0;}
 
-.pub .cont {}
+.pub .cont {width: 30%;
+            height: 100vh;}
 
-.cont ul {}
+.cont ul {width: 100%;
+        height: 100%;}
 
-.cont li {}
+.cont li {width: 100%;
+        height: 33.3333%;
+        opacity: 0.4;
+        transition: all 0.8s;}
 
-.cont li p {}
+.cont li:hover {opacity: 1;
+   }
 
-.pub .slide {}
+.cont li.on {opacity: 1;}
 
-.pub .slide ul {}
+.cont li:nth-child(1) {background-image: url(/img/ow2.png);
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;}
 
-.pub .slide li {}
+.cont li:nth-child(2) {background-image: url(/img/mario_all.png);
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+    background-color: red}
+
+.cont li:nth-child(3) {background-image: url(/img/mi.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;}
+
+.cont li p {float: right;
+            color: #fff;
+            font-family:'bitbit';
+            font-size: 50px;
+            margin-top: 10px;
+            margin-right: 10px;}
+
+.cont li:nth-child(1):hover p { background: #C5CF34;
+    background: linear-gradient(to right, #C5CF34 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.cont li:nth-child(2):hover p {background: #17CF29;
+    background: linear-gradient(to bottom, #17CF29 0%, #6853CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.cont li:nth-child(3):hover p {background: #CF0202;
+    background: linear-gradient(to bottom, #CF0202 0%, #734C4C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.pub .slide {width: 60%;
+            height: 100vh;
+            background-color: rgba(200, 200, 50, 0.4);
+            position: relative;}
+
+.pub .slide ul {width: 100%;
+            height: 100%;}
+
+.pub .slide li {width: 100%;
+            height: 100%;}
+
+.c1 {position: absolute;
+    top: 0;
+    left: 0;
+    background-color: violet;}
+
+.c1 div {margin: auto;}
+
+.c1 .key {width: 40%;
+            height: 40%;
+            background-color: red;
+    margin-top: 100px;
+    border-radius: 15px;}
+
+.c1 .gul {width: 50%;
+        height: 20%;
+        background-color: #17CF29;
+        margin-top: 50px;
+        border-radius: 20px;}
+
+.c1 .but {width: 10%;
+        height: 5%;
+        background-color: blue;
+        margin-top: 30px;
+        border-radius: 15px;}
+
+.c2 {position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: aquamarine;}
+
+.c3 {position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background-color: blanchedalmond;}
 
 
-.prev {}
+
+.prev {width: 10%;
+    height: 100vh;
+    background-color: aliceblue;}
