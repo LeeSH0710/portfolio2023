@@ -88,7 +88,7 @@ $(document).ready(function(){
 
         $('.photo ul li').eq(i-1).css({top:'0'}).stop().animate({top:'-100%'},800)
         $('.photo ul li').eq(i).css({top:'100%'}).stop().animate({top:'0'},800)
-    },2000)
+    },3000)
     
     // series의 1번 목록을 클릭했을때 display:none이었던 팝업창의 display를 block으로 만들어 보이게한다.
 

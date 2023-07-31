@@ -11,6 +11,8 @@ $(document).ready(function(){
     $(this).addClass('on')
 });
 
+// main의 div메뉴를 클릭했을때 main에 top,right,left중 하나가 붙어라
+
     $('.main div').click(function(){
         let j = $(this).index()
         console.log(j)
@@ -31,6 +33,17 @@ $(document).ready(function(){
 
         $('.main').removeClass('left,right,top')
         $('.main').addClass('left')
+    })
+
+    // cont의 li를 눌렀을때 대응하는 클래스에 on을 붙인다.
+
+    $('.cont li').click(function(){
+
+        let a = $(this).index()
+        console.log(a)
+
+        $('.slide li').removeClass('on')
+
     })
     
 })

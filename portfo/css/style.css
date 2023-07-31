@@ -42,6 +42,8 @@ section {position: fixed;
 .main.on {top: 0;
         left: 0;}
 
+.main h1 {text-indent: -9999px;}
+
 .main.left {top: 0;
         left: -100%;}
 
@@ -52,6 +54,8 @@ section {position: fixed;
             left: 0;}
 
 .main div {cursor: pointer;}
+
+.main div:hover {}
 
 .main h1 {background-image: url(/img/main.png);
         background-repeat: no-repeat;
@@ -178,13 +182,21 @@ align-items: center;}
 .second ul li {width: 50%;}
 
 .prof .third {width: 100%;
-            height: 50%;}
+            height: 50%;
+            background-image: url(../img/gauge.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #fff;}
+
 
 .third ul {display: flex;
             width: 100%;
-            height: 100%;}
+            height: 100%;
+            
+        background-color: #008000;}        
 
-.third li {}
+/* .third li {}
 
 .third li:nth-child(1) {width: 10%;
     height: 100%;
@@ -196,7 +208,7 @@ height: 100%;
 
 .third li:nth-child(3) {width: 40%;
     height: 100%;
-    background-color: olive;}
+    background-color: olive;} */
 
 
 /* 디자인설정 */
@@ -513,11 +525,19 @@ height: 100%;
     left: 0;
     background-color: violet;}
 
+.c1.on {top: 0;
+        left: 0;}
+
 .c1 div {margin: auto;}
 
 .c1 .key {width: 40%;
             height: 40%;
-            background-color: red;
+            background-image: url(../img/oworld-mockup.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #fff;
+            border-radius: 15px;
     margin-top: 100px;
     border-radius: 15px;}
 
@@ -525,18 +545,29 @@ height: 100%;
         height: 20%;
         background-color: #17CF29;
         margin-top: 50px;
-        border-radius: 20px;}
+        border-radius: 20px;
+        font-family: 'bitbit';
+        display: flex;
+        justify-content: center;
+        align-items: center;}
 
 .c1 .but {width: 10%;
         height: 5%;
         background-color: blue;
         margin-top: 30px;
-        border-radius: 15px;}
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'bitbit';}
 
 .c2 {position: absolute;
     top: 0;
     left: 100%;
     background-color: aquamarine;}
+
+.c2.on {top: 0;
+        left: 0;}
 
 .c3 {position: absolute;
     width: 100%;
@@ -544,6 +575,9 @@ height: 100%;
     top: 0;
     left: 100%;
     background-color: blanchedalmond;}
+
+.c3.on {top: 0;
+        left: 0;}
 
 
 
