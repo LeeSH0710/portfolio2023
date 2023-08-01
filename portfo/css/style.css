@@ -111,7 +111,6 @@ section {position: fixed;
     height: 100vh;
     top: 100%;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -122,19 +121,48 @@ section {position: fixed;
 .prof.on {top: 0;
         left: 0;}
 
-.prof article {width: 95%;
-            height: 95%;
+/* 프로필 버튼설정 */
+
+.prof .button {width: 80%;
+                height: 10%;
+                margin: 10px auto;
+                }
+
+.button ul {width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;}
+
+ .button li {width: 200px;
+        height: 100px;
+        background-image: url(/img/sign2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+.button li p {margin-top: 17px;
+    font-size: 35px;
+            font-family: 'bitbit';
+            color: #fff;}
+
+/* 프로필창 설정 */
+
+.prof .board {width: 80%;
+            height: 85%;
             display: flex;
             border-radius: 20px;
             border: 2px solid #fff;
             position: relative;
             justify-content: center;
             align-items: center;
-}
+            margin: auto;}
 
 .prof .first {width: 30%;
             height: 95%;
-            background-color: red;
             border: 2px solid #fff;
             border-radius: 15px;
             padding: 5px;
@@ -142,39 +170,57 @@ section {position: fixed;
 
 .first ul {}
 
-.first ul li {
-    background-color: green;}
+.first ul li {}
 
 .first ul li:nth-child(1) {width: 100%;
 height: 70px;
-background-color: #17CF29;
 display: flex;
 align-items: center;}
 
-.first ul li:nth-child(1) p {}
+.first .frop li p {}
 
-                            
 
-.first ul li:nth-child(2) {width: 100%;
+.first .pt {width: 100%;
+            height: 300px;}
+
+.first .pt li {width: 100%;
                             height: 300px;
                             background-color: blue;}
-                            
 
-.first ul li:nth-child(3) {width: 100%;
-                            height: 200px;}
+.first .pt p {width: 60%;
+            height: 100%;
+            margin: auto;
+            background-image: url(../img/prof.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;}
 
-.first ul li:nth-child(4) {width: 100%;
-                            height: 190px;}
+.first .slog {width: 100%;
+            height: 100px;
+            margin-top: 30px;}
+
+.first .slog p {font-size: 40px;}
+
+.first .name {width: 100%;
+            height: 200px;
+            font-size: 40px;
+            display: flex;
+            align-items: center;}
+
+
 
 .prof .box {width: 70%;
             height: 95%;
             border: 2px solid;
             border-radius: 20px;
             margin: 20px;
-            padding: 7px;}
+            padding: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;}
 
 .prof .second {width: 100%;
-            height: 50%;
+            height: 30%;
             background-color: gray;}
 
 .second ul {display: flex;}
@@ -182,12 +228,11 @@ align-items: center;}
 .second ul li {width: 50%;}
 
 .prof .third {width: 100%;
-            height: 50%;
-            background-image: url(../img/gauge.png);
-            background-size: contain;
+            height: 70%;
+            background-image: url(../img/gauge2.png);
+            background-size: cover;
             background-position: center center;
-            background-repeat: no-repeat;
-            background-color: #fff;}
+            background-repeat: no-repeat;}
 
 
 .third ul {display: flex;
@@ -254,12 +299,26 @@ height: 100%;
             /* background-color: rgba(0, 255, 0, 0.4); */
         display: flex;}
 
+.slide .mid {font-family: 'bitbit';}
+
+.slide .mid {margin-top: 30px;}
+
+.slide .mid h2 {font-size: 45px;
+                font-weight: normal;
+                padding-top: 20px;}
+
+.slide .mid .inform p {font-size: 25px;
+                margin-top: 15px;}
+
 .slide .pbtn {width: 300px;
             height: 70px;
             position: absolute;
             top: 20px;
             left: 40%;
             z-index: 999;}
+
+
+
 
 .slide .pbtn ul {margin: 0 auto;
                 display: flex;
@@ -289,13 +348,18 @@ height: 100%;
 .slide .p1 {width: 100%;
             height: 90vh;
             position: absolute;
-            }
+            transition: all 1s;
+            top: 0;
+            left: 100%;}
+
+.p1.on {top: 0;
+        left: 0;}
 
 .slide .p1 .sajin {width: 80%;
                 height: 55%;
                 background-image: url(/img/oworld-mockup.png);
                 background-size: cover;
-                background-color: red;
+                background-color: plum;
                 margin: 0 auto;
                 margin-top: 50px;
                 border-radius: 15px;}
@@ -333,7 +397,12 @@ height: 100%;
     height: 85vh;
             position: absolute;
             margin-top: 50px;
-            left: -100%;}
+            left: -100%;
+            transition: all 1s;
+            top: 0;}
+
+.p2.on {top: 0;
+        left: 0;}
 
 
 .slide .p2 .sajin {width: 80%;
@@ -353,7 +422,9 @@ height: 100%;
     margin-top: 20px;
     text-align: center;
     justify-content: center;
-    border-radius: 15px;}
+    border-radius: 15px;
+    color: #fff;
+    }
 
 .slide .p2 .btn {width:100px;
     height: 50px;
@@ -374,21 +445,26 @@ height: 100%;
 
 .slide .p3 {width: 100%;
     height: 90vh;
-    background-color: aqua;
     position: absolute;
-    left: 100%;}
+    left: 100%;
+    top: 0;
+    transition: all 1s;}
+
+.p3.on {top: 0;
+        left: 0;}
 
 .slide .p3 .sajin {width: 80%;
                 height: 50%;
                 background-image: url(/img/oworld-mockup.png);
                 background-size: cover;
+                background-color: gray;
                 margin: 0 auto;
                 margin-top: 50px;
                 border-radius: 15px;}
 
 
 
-.slide .p1 .inform {width:50%;
+.slide .p3 .inform {width:50%;
     height: 20%;
     background-color: beige;
     margin: 0 auto;
@@ -398,7 +474,7 @@ height: 100%;
     border-radius: 15px;
     align-items: center;}
 
-.slide .p1 .btn {width:100px;
+.slide .p1 .btn1 {width:100px;
     height: 50px;
     background-color: slateblue;
     margin: 0 auto;
@@ -406,13 +482,256 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;}
+    border-radius: 10px;
+    cursor: pointer;}
 
-.slide .p1 .btn p {font-size: 15px;
+.slide .p1 .btn1 p {font-size: 15px;
     font-family: 'bitbit';
     color: #fff;
 }
 
+.slide .p2 .btn2 {width:100px;
+    height: 50px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;}
+
+.slide .p2 .btn2 p {font-size: 15px;
+    font-family: 'bitbit';
+    color: #fff;
+}
+
+.slide .p3 .btn3 {width:100px;
+    height: 50px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;}
+
+.slide .p3 .btn3 p {font-size: 15px;
+    font-family: 'bitbit';
+    color: #fff;
+}
+
+/* 디자인1 */
+
+.mock1 {width: 70%;
+    height: 80%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 25;}
+
+.mock div {transition: all 1s;
+        width: 100%;}
+
+.mock1.on {top: 0;
+            opacity: 1;
+            }
+
+.mock001.on iframe {
+                opacity: 1;
+                border: 5px solid #4579AF;
+            }
+
+.mock1 div iframe {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;}
+
+.mock1 .clear {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    background-color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+                    border: 3px solid brown;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    font-family: 'bitbit';
+                }
+
+.mock1 .clear p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.mock001.on {opacity: 1;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* 디자인2 */
+
+.mock2 {width: 70%;
+    height: 80%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 25;}
+
+.mock2.on {top: 0;
+            opacity: 1;
+            }
+
+.mock002.on iframe {
+                opacity: 1;
+                border: 5px solid #4579AF;
+            }
+
+.mock2 div iframe {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;}
+
+.mock2 .clear {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    background-color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+                    border: 3px solid brown;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    font-family: 'bitbit';
+                }
+
+.mock2 .clear p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.mock002.on {opacity: 1;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* 디자인3 */
+
+.mock3 {width: 70%;
+    height: 80%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 25;}
+
+
+.mock3.on {top: 0;
+            opacity: 1;
+            }
+
+.mock003.on iframe {
+                opacity: 1;
+                border: 5px solid #4579AF;
+            }
+
+.mock3 div iframe {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;}
+
+.mock3 .clear {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    background-color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+                    border: 3px solid brown;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    font-family: 'bitbit';
+                }
+
+.mock3 .clear p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.mock003.on {opacity: 1;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
 
 
 
@@ -446,7 +765,10 @@ height: 100%;
 
 .pub {width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-image: url(../img/sub.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: absolute;
     display: flex;
     top: 0;
@@ -509,28 +831,33 @@ height: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
 
-.pub .slide {width: 60%;
+
+/* 퍼블리싱 슬라이드 설정 */
+
+.pub .slide2 {width: 50%;
             height: 100vh;
-            background-color: rgba(200, 200, 50, 0.4);
-            position: relative;}
+            position: relative;
+            overflow: hidden; }
 
-.pub .slide ul {width: 100%;
+.pub .slide2 ul {width: 100%;
             height: 100%;}
 
-.pub .slide li {width: 100%;
+.pub .slide2 li {width: 100%;
             height: 100%;}
+
+/* 대전 오월드 퍼블리싱 */
 
 .c1 {position: absolute;
     top: 0;
-    left: 0;
-    background-color: violet;}
+    left: -100%;
+    transition: all 1s;}
 
 .c1.on {top: 0;
         left: 0;}
 
 .c1 div {margin: auto;}
 
-.c1 .key {width: 40%;
+.c1 .key {width: 60%;
             height: 40%;
             background-image: url(../img/oworld-mockup.png);
             background-position: center center;
@@ -561,26 +888,118 @@ height: 100%;
         align-items: center;
         font-family: 'bitbit';}
 
+
+    /* 슈퍼마리오 퍼블리싱 */
+
 .c2 {position: absolute;
     top: 0;
     left: 100%;
-    background-color: aquamarine;}
+    transform: all 1s;}
 
 .c2.on {top: 0;
         left: 0;}
+
+.c2 div {margin: auto;}
+
+.c2 .key {width: 60%;
+    height: 40%;
+    background-image: url(../img/mario_mockup.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 15px;
+margin-top: 100px;
+border-radius: 15px;}
+
+.c2 .gul {
+    width: 50%;
+        height: 20%;
+        background-color: #17CF29;
+        margin-top: 50px;
+        border-radius: 20px;
+        font-family: 'bitbit';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.c2 .but {width: 10%;
+    height: 5%;
+    background-color: blue;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';}
+
+/* 미션임파서블 퍼블리싱 */
 
 .c3 {position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 100%;
-    background-color: blanchedalmond;}
+    transition: all 1s;}
 
 .c3.on {top: 0;
         left: 0;}
 
+.c3 div {margin: auto;}
+
+.c3 .key {
+    width: 60%;
+            height: 40%;
+            background-image: url(../img/mi.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #fff;
+            border-radius: 15px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.c3 .gul {
+    width: 50%;
+        height: 20%;
+        background-color: #17CF29;
+        margin-top: 50px;
+        border-radius: 20px;
+        font-family: 'bitbit';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.c3 .but {width: 10%;
+    height: 5%;
+    background-color: blue;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';}
+
+.prev {width: 20%;
+    height: 100vh;}
 
 
-.prev {width: 10%;
-    height: 100vh;
-    background-color: aliceblue;}
+    .prev li {width: 250px;
+        height: 100px;
+        background-image: url(/img/sign2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin: 50px auto }
+
+.prev li p {margin-top: 17px;
+    font-size: 35px;
+            font-family: 'bitbit';
+            color: #fff;}
