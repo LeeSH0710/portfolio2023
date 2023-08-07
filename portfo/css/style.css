@@ -28,7 +28,7 @@ section {position: fixed;
 
 .main {width: 100%;
         height: 100vh;
-        background-image: url(/img/bg.png);
+        background-image: url(/img/bg.gif);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -37,7 +37,8 @@ section {position: fixed;
         justify-content: center;
         align-items: center;
         top: 0;
-        left: 100%;}
+        left: 100%;
+        box-sizing: border-box;}
 
 .main.on {top: 0;
         left: 0;}
@@ -103,7 +104,7 @@ section {position: fixed;
 
 /* 프로필 설정 */
 
-.prof {background-image: url(/img/pbg.gif);
+.prof {background-image: url(/img/rock.gif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -258,7 +259,7 @@ height: 100%;
 
 /* 디자인설정 */
 
-.design {background-image: url(/img/dgb2.gif);
+.design {background-image: url(/img/fall.gif);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -366,7 +367,7 @@ height: 100%;
 
 
 
-.slide .p1 .inform {width:50%;
+.slide .p1 .inform {width:40%;
     height: 20%;
     background-color: beige;
     margin: 0 auto;
@@ -415,7 +416,7 @@ height: 100%;
                 border-radius: 15px;}
 
 
-.slide .p2 .inform {width:50%;
+.slide .p2 .inform {width:40%;
     height: 20%;
     background-color: blue;
     margin: 0 auto;
@@ -464,9 +465,9 @@ height: 100%;
 
 
 
-.slide .p3 .inform {width:50%;
+.slide .p3 .inform {width:40%;
     height: 20%;
-    background-color: beige;
+    background-color: #ff1111;
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
@@ -474,8 +475,8 @@ height: 100%;
     border-radius: 15px;
     align-items: center;}
 
-.slide .p1 .btn1 {width:100px;
-    height: 50px;
+.slide .p1 .btn1 {width:150px;
+    height: 75px;
     background-color: slateblue;
     margin: 0 auto;
     margin-top: 20px;
@@ -483,15 +484,42 @@ height: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    cursor: pointer;}
+    cursor: pointer;
+    transition: all 1s;}
 
-.slide .p1 .btn1 p {font-size: 15px;
+.slide .p1 .btn1 p {font-size: 22px;
+    font-family: 'bitbit';
+    color: #fff;
+    
+}
+
+.slide .p1 .btn1:hover {border: 1px solid #fff;
+                        background-color: skyblue;
+                        }
+
+.slide .p2 .btn2 {width:150px;
+    height: 75px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;}
+
+.slide .p2 .btn2:hover {border: 1px solid #fff;
+                        background-color: skyblue;
+                        }
+
+.slide .p2 .btn2 p {font-size: 22px;
     font-family: 'bitbit';
     color: #fff;
 }
 
-.slide .p2 .btn2 {width:100px;
-    height: 50px;
+.slide .p3 .btn3 {width:150px;
+    height: 75px;
     background-color: slateblue;
     margin: 0 auto;
     margin-top: 20px;
@@ -499,25 +527,14 @@ height: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    cursor: pointer;}
+    cursor: pointer;
+    transition: all 1s;}
 
-.slide .p2 .btn2 p {font-size: 15px;
-    font-family: 'bitbit';
-    color: #fff;
-}
+.slide .p3 .btn3:hover {border: 1px solid #fff;
+                        background-color: skyblue;
+                        }
 
-.slide .p3 .btn3 {width:100px;
-    height: 50px;
-    background-color: slateblue;
-    margin: 0 auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;}
-
-.slide .p3 .btn3 p {font-size: 15px;
+.slide .p3 .btn3 p {font-size: 22px;
     font-family: 'bitbit';
     color: #fff;
 }
@@ -752,7 +769,8 @@ height: 100%;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        margin-right: 10px;}
+        margin-right: 10px;
+        cursor: pointer;}
 
 .next li p {margin-top: 10px;
     font-size: 24px;
@@ -765,7 +783,7 @@ height: 100%;
 
 .pub {width: 100%;
     height: 100vh;
-    background-image: url(../img/sub.gif);
+    background-image: url(../img/river.gif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -845,6 +863,11 @@ height: 100%;
 .pub .slide2 li {width: 100%;
             height: 100%;}
 
+.gul h2 {margin-right: 20px;
+        font-size: 30px;}
+
+.gul {border: 3px solid #000;}
+
 /* 대전 오월드 퍼블리싱 */
 
 .c1 {position: absolute;
@@ -870,7 +893,7 @@ height: 100%;
 
 .c1 .gul {width: 50%;
         height: 20%;
-        background-color: #17CF29;
+        /* background-color: #17CF29; */
         margin-top: 50px;
         border-radius: 20px;
         font-family: 'bitbit';
@@ -878,23 +901,33 @@ height: 100%;
         justify-content: center;
         align-items: center;}
 
-.c1 .but {width: 10%;
-        height: 5%;
-        background-color: blue;
-        margin-top: 30px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'bitbit';}
+.c1 .gul p {font-size: 20px;}
+
+.c1 .but {width: 15%;
+    height: 7%;
+    background-color: blue;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';
+    font-size: 22px;
+    transition: all 1s;}
+
+.c1 .but:hover {background-color: skyblue;
+    border: 2px solid #fff;
+    cursor: pointer;}
 
 
     /* 슈퍼마리오 퍼블리싱 */
 
 .c2 {position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 100%;
-    transform: all 1s;}
+    transition: all 1s;}
 
 .c2.on {top: 0;
         left: 0;}
@@ -915,7 +948,6 @@ border-radius: 15px;}
 .c2 .gul {
     width: 50%;
         height: 20%;
-        background-color: #17CF29;
         margin-top: 50px;
         border-radius: 20px;
         font-family: 'bitbit';
@@ -924,15 +956,23 @@ border-radius: 15px;}
         align-items: center;
 }
 
-.c2 .but {width: 10%;
-    height: 5%;
+.c2 .gul p {font-size: 18px;}
+
+.c2 .but {width: 15%;
+    height: 7%;
     background-color: blue;
     margin-top: 30px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'bitbit';}
+    font-family: 'bitbit';
+    font-size: 22px;
+    transition: all 1s;}
+
+.c2 .but:hover {background-color: skyblue;
+    border: 2px solid #fff;
+    cursor: pointer;}
 
 /* 미션임파서블 퍼블리싱 */
 
@@ -964,7 +1004,6 @@ border-radius: 15px;}
 .c3 .gul {
     width: 50%;
         height: 20%;
-        background-color: #17CF29;
         margin-top: 50px;
         border-radius: 20px;
         font-family: 'bitbit';
@@ -973,15 +1012,22 @@ border-radius: 15px;}
         align-items: center;
 }
 
-.c3 .but {width: 10%;
-    height: 5%;
+.c3 .but {width: 15%;
+    height: 7%;
     background-color: blue;
     margin-top: 30px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'bitbit';}
+    font-family: 'bitbit';
+    font-size: 22px;
+    border: 2px solid #000;
+    transition: all 1s;}
+
+    .c3 .but:hover {background-color: skyblue;
+        border: 2px solid #fff;
+        cursor: pointer;}
 
 .prev {width: 20%;
     height: 100vh;}
@@ -997,7 +1043,10 @@ border-radius: 15px;}
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        margin: 50px auto }
+        margin: 50px auto;
+        cursor: pointer;}
+
+.prev li:hover {}
 
 .prev li p {margin-top: 17px;
     font-size: 35px;
