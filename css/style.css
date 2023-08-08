@@ -1,0 +1,1064 @@
+@charset 'utf-8';
+
+@font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+  }
+
+*{margin: 0;
+padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+img {vertical-align: bottom;}
+
+body {position: fixed;
+    width: 100%;
+height: 100%;
+}
+
+section {position: fixed;
+        transition: all 0.8s;}
+
+
+/* 메인페이지설정 */
+
+.main {width: 100%;
+        height: 100vh;
+        background-image: url(/img/bg.gif);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 100%;
+        box-sizing: border-box;}
+
+.main.on {top: 0;
+        left: 0;}
+
+.main h1 {text-indent: -9999px;}
+
+.main.left {top: 0;
+        left: -100%;}
+
+.main.right {top: 0;
+            left: 100%;}
+
+.main.top {top: -100%;
+            left: 0;}
+
+.main div {cursor: pointer;}
+
+.main div:hover {}
+
+.main h1 {background-image: url(/img/main.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 400px;
+        height: 400px;
+        margin-left: 100px;
+        padding-top: 100px;}
+
+.main nav {}
+
+.main .mainp {}
+
+.main .profile {background-image: url(/img/pr.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                width: 250px;
+                height: 60px;
+                position: absolute;
+                left: 45%;
+                bottom: 50px;}
+
+.main .desi {background-image: url(/img/ds.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 50px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+    top: 38%;}
+
+.main .publish {background-image: url(/img/pu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 50px;
+    height: 350px;
+    position: absolute;
+    right: 50px;
+    top: 36%;}
+
+
+/* 프로필 설정 */
+
+.prof {background-image: url(/img/rock.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'bitbit';
+    font-size: 30px;}
+
+
+.prof.on {top: 0;
+        left: 0;}
+
+/* 프로필 버튼설정 */
+
+.prof .button {width: 80%;
+                height: 10%;
+                margin: 10px auto;
+                }
+
+.button ul {width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;}
+
+ .button li {width: 200px;
+        height: 100px;
+        background-image: url(/img/sign2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+.button li p {margin-top: 17px;
+    font-size: 35px;
+            font-family: 'bitbit';
+            color: #fff;}
+
+/* 프로필창 설정 */
+
+.prof .board {width: 80%;
+            height: 85%;
+            display: flex;
+            border-radius: 20px;
+            border: 2px solid #fff;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin: auto;}
+
+.prof .first {width: 30%;
+            height: 95%;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            padding: 5px;
+            margin-left: 20px;}
+
+.first ul {}
+
+.first ul li {}
+
+.first ul li:nth-child(1) {width: 100%;
+height: 70px;
+display: flex;
+align-items: center;}
+
+.first .frop li p {}
+
+
+.first .pt {width: 100%;
+            height: 300px;}
+
+.first .pt li {width: 100%;
+                            height: 300px;
+                            background-color: blue;}
+
+.first .pt p {width: 60%;
+            height: 100%;
+            margin: auto;
+            background-image: url(../img/prof.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;}
+
+.first .slog {width: 100%;
+            height: 100px;
+            margin-top: 30px;}
+
+.first .slog p {font-size: 40px;}
+
+.first .name {width: 100%;
+            height: 200px;
+            font-size: 40px;
+            display: flex;
+            align-items: center;}
+
+
+
+.prof .box {width: 70%;
+            height: 95%;
+            border: 2px solid;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;}
+
+.prof .second {width: 100%;
+            height: 30%;
+            background-color: gray;}
+
+.second ul {display: flex;}
+
+.second ul li {width: 50%;}
+
+.prof .third {width: 100%;
+            height: 70%;
+            background-image: url(../img/gauge2.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;}
+
+
+.third ul {display: flex;
+            width: 100%;
+            height: 100%;
+            
+        background-color: #008000;}        
+
+/* .third li {}
+
+.third li:nth-child(1) {width: 10%;
+    height: 100%;
+background-color: magenta;}
+
+.third li:nth-child(2) {width: 50%;
+height: 100%;
+    background-color: #CF1512;}
+
+.third li:nth-child(3) {width: 40%;
+    height: 100%;
+    background-color: olive;} */
+
+
+/* 디자인설정 */
+
+.design {background-image: url(/img/fall.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        display: flex;}
+
+
+.design.on {top: 0;
+            left: 0;}
+
+.menu {width: 16%;
+        height: 100vh;
+        /* background-color: rgba(255, 0, 0, 0.4); */
+        margin-top: 100px;
+        perspective: 900px;}
+
+.menu ul {}
+
+.menu ul li {color: #fff;
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            background-image: url(/img/sign.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 70px;
+            font-family: 'bitbit';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s;}
+
+.menu ul li:hover {transform: rotateY(360deg);}
+
+.slide {width: 70%;
+            height: 100vh;
+            /* background-color: rgba(0, 255, 0, 0.4); */
+        display: flex;}
+
+.slide .mid {font-family: 'bitbit';}
+
+.slide .mid {margin-top: 30px;}
+
+.slide .mid h2 {font-size: 45px;
+                font-weight: normal;
+                padding-top: 20px;}
+
+.slide .mid .inform p {font-size: 25px;
+                margin-top: 15px;}
+
+.slide .pbtn {width: 300px;
+            height: 70px;
+            position: absolute;
+            top: 20px;
+            left: 40%;
+            z-index: 999;}
+
+
+
+
+.slide .pbtn ul {margin: 0 auto;
+                display: flex;
+                justify-content: space-between;}
+
+.slide .pbtn li {width: 50px;
+                height: 50px;
+                background-color: red;
+                border-radius: 25px;
+                text-indent: -9999px;
+                cursor: pointer;}
+
+.slide .pbtn li.on {opacity: 0.6;}
+
+.slide ul {width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;}
+
+.slide ul li {}
+
+/* 디자인 프로젝트1 */
+
+.slide .p1 {width: 100%;
+            height: 90vh;
+            position: absolute;
+            transition: all 1s;
+            top: 0;
+            left: 100%;}
+
+.p1.on {top: 0;
+        left: 0;}
+
+.slide .p1 .sajin {width: 80%;
+                height: 55%;
+                background-image: url(/img/oworld-mockup.png);
+                background-size: cover;
+                background-color: plum;
+                margin: 0 auto;
+                margin-top: 50px;
+                border-radius: 15px;}
+
+
+
+.slide .p1 .inform {width:40%;
+    height: 20%;
+    background-color: beige;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;}
+
+.slide .p1 .btn {width:100px;
+    height: 50px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;}
+
+.slide .p1 .btn p {font-size: 15px;
+    font-family: 'bitbit';
+    color: #fff;
+}
+
+/* 디자인 프로젝트2 */
+
+.slide .p2 {width: 100%;
+    height: 85vh;
+            position: absolute;
+            margin-top: 50px;
+            left: -100%;
+            transition: all 1s;
+            top: 0;}
+
+.p2.on {top: 0;
+        left: 0;}
+
+
+.slide .p2 .sajin {width: 80%;
+                height: 50%;
+                background-image: url(/img/mario_mockup.png);
+                background-size: cover;
+                background-color: red;
+                margin: 0 auto;
+                margin-top: 50px;
+                border-radius: 15px;}
+
+
+.slide .p2 .inform {width:40%;
+    height: 20%;
+    background-color: blue;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: #fff;
+    }
+
+.slide .p2 .btn {width:100px;
+    height: 50px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;}
+
+.slide .p2 .btn p {font-size: 15px;
+    color: #fff;
+}
+
+
+/* 디자인 프로젝트3 */
+
+.slide .p3 {width: 100%;
+    height: 90vh;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transition: all 1s;}
+
+.p3.on {top: 0;
+        left: 0;}
+
+.slide .p3 .sajin {width: 80%;
+                height: 50%;
+                background-image: url(/img/oworld-mockup.png);
+                background-size: cover;
+                background-color: gray;
+                margin: 0 auto;
+                margin-top: 50px;
+                border-radius: 15px;}
+
+
+
+.slide .p3 .inform {width:40%;
+    height: 20%;
+    background-color: #ff1111;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;}
+
+.slide .p1 .btn1 {width:150px;
+    height: 75px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;}
+
+.slide .p1 .btn1 p {font-size: 22px;
+    font-family: 'bitbit';
+    color: #fff;
+    
+}
+
+.slide .p1 .btn1:hover {border: 1px solid #fff;
+                        background-color: skyblue;
+                        }
+
+.slide .p2 .btn2 {width:150px;
+    height: 75px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;}
+
+.slide .p2 .btn2:hover {border: 1px solid #fff;
+                        background-color: skyblue;
+                        }
+
+.slide .p2 .btn2 p {font-size: 22px;
+    font-family: 'bitbit';
+    color: #fff;
+}
+
+.slide .p3 .btn3 {width:150px;
+    height: 75px;
+    background-color: slateblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;}
+
+.slide .p3 .btn3:hover {border: 1px solid #fff;
+                        background-color: skyblue;
+                        }
+
+.slide .p3 .btn3 p {font-size: 22px;
+    font-family: 'bitbit';
+    color: #fff;
+}
+
+/* 디자인1 */
+
+.mock1 {width: 70%;
+    height: 80%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 25;}
+
+.mock div {transition: all 1s;
+        width: 100%;}
+
+.mock1.on {top: 0;
+            opacity: 1;
+            }
+
+.mock001.on iframe {
+                opacity: 1;
+                border: 5px solid #4579AF;
+            }
+
+.mock1 div iframe {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;}
+
+.mock1 .clear {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    background-color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+                    border: 3px solid brown;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    font-family: 'bitbit';
+                }
+
+.mock1 .clear p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.mock001.on {opacity: 1;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* 디자인2 */
+
+.mock2 {width: 70%;
+    height: 80%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 25;}
+
+.mock2.on {top: 0;
+            opacity: 1;
+            }
+
+.mock002.on iframe {
+                opacity: 1;
+                border: 5px solid #4579AF;
+            }
+
+.mock2 div iframe {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;}
+
+.mock2 .clear {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    background-color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+                    border: 3px solid brown;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    font-family: 'bitbit';
+                }
+
+.mock2 .clear p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.mock002.on {opacity: 1;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* 디자인3 */
+
+.mock3 {width: 70%;
+    height: 80%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 25;}
+
+
+.mock3.on {top: 0;
+            opacity: 1;
+            }
+
+.mock003.on iframe {
+                opacity: 1;
+                border: 5px solid #4579AF;
+            }
+
+.mock3 div iframe {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;}
+
+.mock3 .clear {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    background-color: brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+                    border: 3px solid brown;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    font-family: 'bitbit';
+                }
+
+.mock3 .clear p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.mock003.on {opacity: 1;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+
+.next {width: 23%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 255, 0.4); */
+}
+
+.next ul {display: flex;}
+
+.next li {width: 150px;
+        height: 80px;
+        background-image: url(/img/sign2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 1s;}
+
+.next li:hover {transform: rotate(-15deg);}
+
+.next li p {margin-top: 10px;
+    font-size: 24px;
+            font-family: 'bitbit';
+            color: #fff;}
+
+
+
+/* 퍼블리싱 설정 */
+
+.pub {width: 100%;
+    height: 100vh;
+    background-image: url(../img/river.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 100%;
+    perspective: 3600;
+    transition: all 1s;}
+
+.pub.on {top: 0;
+        left: 0;}
+
+.pub .cont {width: 30%;
+            height: 100vh;}
+
+.cont ul {width: 100%;
+        height: 100%;}
+
+.cont li {width: 100%;
+        height: 33.3333%;
+        opacity: 0.4;
+        transition: all 0.8s;
+        }
+
+.cont li:hover {opacity: 1;
+   transform: rotateZ(30deg);}
+
+.cont li.on {opacity: 1;}
+
+.cont li:nth-child(1) {background-image: url(/img/ow2.png);
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;}
+
+.cont li:nth-child(2) {background-image: url(/img/mario_all.png);
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+    background-color: red}
+
+.cont li:nth-child(3) {background-image: url(/img/mi.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;}
+
+.cont li p {float: right;
+            color: #fff;
+            font-family:'bitbit';
+            font-size: 50px;
+            margin-top: 10px;
+            margin-right: 10px;}
+
+.cont li:nth-child(1):hover p { background: #C5CF34;
+    background: linear-gradient(to right, #C5CF34 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.cont li:nth-child(2):hover p {background: #17CF29;
+    background: linear-gradient(to bottom, #17CF29 0%, #6853CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.cont li:nth-child(3):hover p {background: #CF0202;
+    background: linear-gradient(to bottom, #CF0202 0%, #734C4C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+
+/* 퍼블리싱 슬라이드 설정 */
+
+.pub .slide2 {width: 50%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden; }
+
+.pub .slide2 ul {width: 100%;
+            height: 100%;}
+
+.pub .slide2 li {width: 100%;
+            height: 100%;}
+
+.gul h2 {margin-right: 20px;
+        font-size: 30px;}
+
+.gul {border: 3px solid #000;}
+
+/* 대전 오월드 퍼블리싱 */
+
+.c1 {position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 1s;}
+
+.c1.on {top: 0;
+        left: 0;}
+
+.c1 div {margin: auto;}
+
+.c1 .key {width: 60%;
+            height: 40%;
+            background-image: url(../img/oworld-mockup.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #fff;
+            border-radius: 15px;
+    margin-top: 100px;
+    border-radius: 15px;}
+
+.c1 .gul {width: 50%;
+        height: 20%;
+        /* background-color: #17CF29; */
+        margin-top: 50px;
+        border-radius: 20px;
+        font-family: 'bitbit';
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+.c1 .gul p {font-size: 20px;}
+
+.c1 .but {width: 15%;
+    height: 7%;
+    background-color: blue;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';
+    font-size: 22px;
+    transition: all 1s;}
+
+.c1 .but:hover {background-color: skyblue;
+    border: 2px solid #fff;
+    cursor: pointer;}
+
+
+    /* 슈퍼마리오 퍼블리싱 */
+
+.c2 {position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    transition: all 1s;}
+
+.c2.on {top: 0;
+        left: 0;}
+
+.c2 div {margin: auto;}
+
+.c2 .key {width: 60%;
+    height: 40%;
+    background-image: url(../img/mario_mockup.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 15px;
+margin-top: 100px;
+border-radius: 15px;}
+
+.c2 .gul {
+    width: 50%;
+        height: 20%;
+        margin-top: 50px;
+        border-radius: 20px;
+        font-family: 'bitbit';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.c2 .gul p {font-size: 18px;}
+
+.c2 .but {width: 15%;
+    height: 7%;
+    background-color: blue;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';
+    font-size: 22px;
+    transition: all 1s;}
+
+.c2 .but:hover {background-color: skyblue;
+    border: 2px solid #fff;
+    cursor: pointer;}
+
+/* 미션임파서블 퍼블리싱 */
+
+.c3 {position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    transition: all 1s;}
+
+.c3.on {top: 0;
+        left: 0;}
+
+.c3 div {margin: auto;}
+
+.c3 .key {
+    width: 60%;
+            height: 40%;
+            background-image: url(../img/mi.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #fff;
+            border-radius: 15px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.c3 .gul {
+    width: 50%;
+        height: 20%;
+        margin-top: 50px;
+        border-radius: 20px;
+        font-family: 'bitbit';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.c3 .but {width: 15%;
+    height: 7%;
+    background-color: blue;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bitbit';
+    font-size: 22px;
+    border: 2px solid #000;
+    transition: all 1s;}
+
+    .c3 .but:hover {background-color: skyblue;
+        border: 2px solid #fff;
+        cursor: pointer;}
+
+.prev {width: 20%;
+    height: 100vh;}
+
+
+    .prev li {width: 250px;
+        height: 100px;
+        background-image: url(/img/sign2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin: 50px auto;
+        cursor: pointer;
+        transition: all 1s;}
+
+.prev li:hover {transform: rotate(-15deg);}
+
+.prev li p {margin-top: 17px;
+    font-size: 35px;
+            font-family: 'bitbit';
+            color: #fff;}
