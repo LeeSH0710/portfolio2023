@@ -294,7 +294,8 @@ height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all 1s;}
+            transition: all 1s;
+            cursor: pointer;}
 
 .menu ul li:hover {transform: rotateY(360deg);}
 
